@@ -5,14 +5,14 @@
 %% --- Contextualização do departamento ---
 %%
 
-\def\@departamento{Departamento de Ci\^{e}ncia da Computa\c{c}\~{a}o}
-\def\@instituto{Instituto de Ci\^{e}ncias Exatas}
-\def\@universidade{Universidade de Bras\'{\i}lia}
+\def\@departamento{Computer Science Department}
+\def\@instituto{Institute of Exact Sciences}
+\def\@universidade{University of Brasilia}
 \def\@siglauni{UnB}
-\def\@cidade{Bras\'ilia}
+\def\@cidade{Brasilia}
 \def\@uf{DF}
 \def\@cidadeuf{\@cidade--\@uf}
-\def\@pais{Brasil}
+\def\@pais{Brazil}
 
 %%
 %% --- Definição de opções ---
@@ -48,7 +48,7 @@
 \DeclareOptionX{mestrado}{\@posgraduacaotrue%
     \gdef\@nomecurso{Mestrado}%
     \gdef\@assunto{Disserta\c{c}\~ao (Mestrado)}%
-    \gdef\@mododeescrita{Disserta\c{c}\~ao}}%
+    \gdef\@mododeescrita{Dissertation}}%
 
 \newif\if@doutorado\@doutoradofalse%
 \DeclareOptionX{doutorado}{\@posgraduacaotrue\@doutoradotrue%
@@ -61,8 +61,8 @@
 
 \newif\if@ppca\@ppcafalse%
 \DeclareOptionX{ppca}{\@ppcatrue%
-					\gdef\@nomeDoPrograma{Computa\c{c}\~{a}o Aplicada}%
-					\gdef\@nomecurso{Mestrado Profissional}}%
+					\gdef\@nomeDoPrograma{Applied Computing}%
+					\gdef\@nomecurso{Professional Master's Degree}}%
 
 \newif\if@qualificacao\@qualificacaofalse%
 \DeclareOptionX{qualificacao}{\@qualificacaotrue}%
@@ -138,7 +138,7 @@
 %%
 
 
-\RequirePackage[brazil,american]{babel}% Idiomas
+\RequirePackage[american, brazil]{babel}% Idiomas
 \RequirePackage[fixlanguage]{babelbib}%  Idioma das referências
 \RequirePackage[utf8]{inputenc}%         Arquivos na codificação UTF-8
 \RequirePackage[T1]{fontenc}%            Habilita busca com caracteres latinos
@@ -296,7 +296,7 @@
 \renewcommand{\bibliography}[1]{%
 	%renomeia a seção após influência maligna do Babel
 	\renewcommand*{\bibname}
-		{\@ifundefined{XeTeXversion}{Refer\^encias}{Referências}}
+		{\@ifundefined{XeTeXversion}{Bibliography}{Bibliography}}
 	\addtocchapter{\bibname}
 	\singlespacing\@bibliography{#1}\defaultspacing}
 
@@ -463,11 +463,11 @@
               {\at@coorda}%Se primeiro argumento opcional chama esta
               {\at@coordo}}%senão chama esta rotina
 
-\def\at@coorda[#1]#2#3{\def\@sexocoordenador{Coordenadora}%
+\def\at@coorda[#1]#2#3{\def\@sexocoordenador{Coordinator}%
                         \def\@nomecoordenador{#2}%
                         \def\@filicoordenador{#3}}
 
-\def\at@coordo#1#2{\def\@sexocoordenador{Coordenador}%
+\def\at@coordo#1#2{\def\@sexocoordenador{Coordinator}%
                         \def\@nomecoordenador{#1}%
                         \def\@filicoordenador{#2}}
 
@@ -476,11 +476,11 @@
               {\at@orienta}%Se primeiro argumento opcional chama esta
               {\at@oriento}}%senao chama esta rotina
 
-\def\at@orienta[#1]#2#3{\def\@sexoorientador{Orientadora}%
+\def\at@orienta[#1]#2#3{\def\@sexoorientador{Advisor}%
                         \def\@nomeorientador{#2}%
                         \def\@filiorientador{#3}}
 
-\def\at@oriento#1#2{\def\@sexoorientador{Orientador}%
+\def\at@oriento#1#2{\def\@sexoorientador{Advisor}%
                         \def\@nomeorientador{#1}%
                         \def\@filiorientador{#2}}
 
@@ -551,7 +551,7 @@
 \newenvironment{agradecimentos}
 	{\begin{paginatitulo}%
 	\pdfbookmark{Agradecimentos}{acknowledgements}%
-		\chapter*{Agradecimentos}}%
+		\chapter*{Acknowledgements}}%
 	{\end{paginatitulo}}
 
 \renewenvironment{abstract}
@@ -573,7 +573,7 @@
 \newenvironment{dedicatoria}
 	{\begin{paginatitulo}%
 	\pdfbookmark{Dedicat\'oria}{dedication}%
-		\chapter*{Dedicat\'oria}}%
+		\chapter*{Dedication}}%
 	{\end{paginatitulo}}
 
 \def\@printfulltitle{%
@@ -611,16 +611,16 @@
 			\@mododeescrita\ %
 			\if@posgraduacao%
 				\if@ppca%
-					apresentada como requisito parcial para %
-					\if@qualificacao{qualificação}\else{conclus\~ao}\fi~do\\%
+					presented as a partial requirement for the %
+					\if@qualificacao{qualification}\else{conclusion}\fi~of the\\%
 				\else%
-					apresentada como requisito parcial para\\
-					\if@qualificacao{qualificação}\else{conclus\~ao}\fi~do %
+					presented as a partial requirement for the \\
+					\if@qualificacao{qualification}\else{conclusion}\fi~of the %
 				\fi%
-				\@nomecurso\ em \@nomeDoPrograma%
+				\@nomecurso\ in \@nomeDoPrograma%
 			\else%
-				apresentada como requisito parcial\\
-				para conclus\~ao do \@nomecurso%
+				presented as a partial requirement for\\
+				conclusion of the \@nomecurso%
 			\fi%
 			\vfill%
 			\@sexoorientador\\\@nomeorientador\\%
@@ -645,16 +645,16 @@
 			\@mododeescrita\ %
 			\if@posgraduacao%
 				\if@ppca%
-					apresentada como requisito parcial para %
-					\if@qualificacao{qualificação}\else{conclus\~ao}\fi~do\\%
+					presented as a partial requirement for the %
+					\if@qualificacao{qualification}\else{conclusion}\fi~of the\\%
 				\else%
-					apresentada como requisito parcial para\\
-					\if@qualificacao{qualificação}\else{conclus\~ao}\fi~do %
+					apresented as a partial requirement for the \\
+					\if@qualificacao{qualification}\else{conclusion}\fi~of the %
 				\fi%
-				\@nomecurso\ em \@nomeDoPrograma%
+				\@nomecurso\ in \@nomeDoPrograma%
 			\else%
-				apresentada como requisito parcial\\
-				para conclus\~ao do \@nomecurso%
+				presented as a partial requirement for\\
+				conclusion of the \@nomecurso%
 			\fi%
 			\vfill%
 			\@nomeorientador\ (\@sexoorientador)\\
@@ -677,10 +677,10 @@
 				\fi%
 			\fi%
 			\@nomecoordenador\\
-			\@sexocoordenador \ do\ %
-			\if@posgraduacao Programa de P\'{o}s-gradua\c{c}\~{a}o em \@nomeDoPrograma\else \@nomecurso\fi%
+			\@sexocoordenador \ of the\ %
+			\if@posgraduacao Graduate Program in \@nomeDoPrograma\else \@nomecurso\fi%
 			\vfill%
-			{\large \@cidade, \@dia\ de \@mes\ de \@ano}
+			{\large \@cidade, \@mes\ \@dia, \@ano}
 		\end{center}%
 		\defaultspacing%
 	\end{paginatitulo}%
@@ -745,7 +745,7 @@
 		\@ifundefined{XeTeXversion}{
 			\addto\captionsbrazil{%
 			\renewcommand*{\glossaryname}{Gloss\'ario}%
-			\renewcommand*{\acronymname}{Lista de Abreviaturas e Siglas}%
+			\renewcommand*{\acronymname}{Acronyms}%
 			\renewcommand*{\entryname}{Entrada}%
 			\renewcommand*{\descriptionname}{Descri\c{c}\~ao}%
 			\renewcommand*{\symbolname}{S\'\imbolo}%
@@ -877,7 +877,7 @@
 	\addtocounter{anexo}{1}%
 	\ifnum\value{anexo}<2%
 		\if@PosTextualNaoIncluso\@conteudoPosTextual\fi%
-		\renewcommand{\appendixname}{Anexo}%
+		\renewcommand{\appendixname}{Annex}%
 		\ifnum\value{apendice}<1\appendix\fi%
 		\renewcommand{\thechapter}{\Roman{anexo}}%
 	    \addcontentsline{toc}{chapter}{\appendixname}%
@@ -896,11 +896,11 @@
 		\@IncluirSecao{dedicatoria}%
 		\@IncluirSecao{agradecimentos}%
 	\fi%
-	\@IncluirSecao{resumo}%
+	%\@IncluirSecao{resumo}%
 	\selectlanguage{american}%
 	\@IncluirSecao{abstract}%
-	\selectlanguage{brazil}%
-    \selectbiblanguage{brazil}%
+	\selectlanguage{american}%
+    \selectbiblanguage{american}%
 	\@erroSeNaoExiste{bibliografia.bib}%
 
 	\tableofcontents%
@@ -922,16 +922,16 @@
 \newcommand{\sigla}[2]{\newacronym{#1}{#1}{#2}}%
 
 \newcommand{\@referencia}[2]{#1~\ref{#2}}%
-\newcommand{\refCap}[1]{\@referencia{Capítulo}{#1}}%
-\newcommand{\refCaps}[2]{\@referencia{Capítulos}{#1}\ a \ref{#2}}%
-\newcommand{\refFig}[1]{\@referencia{Figura}{#1}}%
-\newcommand{\refFigs}[2]{\@referencia{Figuras}{#1}\ a \ref{#2}}%
-\newcommand{\refEq}[1]{\@referencia{Equação}{#1}}%
-\newcommand{\refEqs}[2]{\@referencia{Equações}{#1}\ a \ref{#2}}%
-\newcommand{\refTab}[1]{\@referencia{Tabela}{#1}}%
-\newcommand{\refTabs}[2]{\@referencia{Tabelas}{#1}\ a \ref{#2}}%
-\newcommand{\refApendice}[1]{\@referencia{Apêndice}{#1}}%
-\newcommand{\refAnexo}[1]{\@referencia{Anexo}{#1}}%
+\newcommand{\refCap}[1]{\@referencia{Chapter}{#1}}%
+\newcommand{\refCaps}[2]{\@referencia{Chapters}{#1}\ a \ref{#2}}%
+\newcommand{\refFig}[1]{\@referencia{Figure}{#1}}%
+\newcommand{\refFigs}[2]{\@referencia{Figures}{#1}\ a \ref{#2}}%
+\newcommand{\refEq}[1]{\@referencia{Equation}{#1}}%
+\newcommand{\refEqs}[2]{\@referencia{Equations}{#1}\ a \ref{#2}}%
+\newcommand{\refTab}[1]{\@referencia{Table}{#1}}%
+\newcommand{\refTabs}[2]{\@referencia{Tables}{#1}\ a \ref{#2}}%
+\newcommand{\refApendice}[1]{\@referencia{Appendix}{#1}}%
+\newcommand{\refAnexo}[1]{\@referencia{Annex}{#1}}%
 
 \newcommand{\figuraBib}[6][!ht]{%
 	\begin{figure}[#1]%
