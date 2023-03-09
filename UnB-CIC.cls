@@ -914,7 +914,8 @@
 \newcommand{\@conteudoPosTextual}{%
 	\@PosTextualNaoInclusofalse%
     \postextual%
-	\bibliographystyle{babunsrt}%
+	%\bibliographystyle{babunsrt}%
+         \bibliographystyle{plainnat}%
     \bibliography{bibliografia}%
 }%
 
