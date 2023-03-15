@@ -910,12 +910,16 @@
 
 	\textual%
 }%
-
+%\usepackage[round]{natbib}	% Citações padrão ABNT
+\usepackage{hyperref}
+\usepackage[alf,abnt-emphasize=bf,abnt-etal-list=0]{abntex2cite}
 \newcommand{\@conteudoPosTextual}{%
 	\@PosTextualNaoInclusofalse%
     \postextual%
 	%\bibliographystyle{babunsrt}%
-         \bibliographystyle{plainnat}%
+    %\bibliographystyle{plainnat}%
+    %\bibliographystyle{dinat}%
+    \bibliographystyle{abntex2-alf}
     \bibliography{bibliografia}%
 }%
 
