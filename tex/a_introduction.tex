@@ -57,17 +57,19 @@ As it is highlighted in \cite{cavusoglu2021minimum} , there are three predominan
 
 The administrative management is the most used mechanism for slots. It is often use the Worldwide Airport Slot Guidelines (WASG), published by (IATA) \cite{ribeiro2018optimization}. There are also applications of WASG variations through local resolutions, as is the case of Brazil, where the local regulator is the National Civil Aviation Agency of Brazil (ANAC). Therefore, this chapter will: (1) present administrative mechanisms, through the WASG and its allocation practices in congested airports, discussing the differences and similarities between the resolution covering Brazilian airports and the best practices developed by IATA; (2) briefly explain the characteristics of the economic management, which contains market-driven mechanisms; and (3) review advantages of slot management mechanism applications compared to airports with almost no restrictions.
 
-\subsection{Administrative demand management}
+\section{Administrative demand management}
 Demand management has been demonstrated in several works as one of the main processes to distribute air operators’ movements in the airports’ available infrastructure, dealing with the lack of capacity, delays and operational service level decaying due to congestion \cite{zografos2017increasing, ribeiro2018optimization}.
 
 The administrative demand management approach aims to increase airport efficiency with allocation prioritization. Based upon optimization techniques, such practices have as objective to allocate in a certain number of available resources (airport slots), the dependent activities, i.e., air operators’ arrivals and departures movements. The allocation, made through the distribution of slots, must satisfy specific conditions (explained in \ref{infra}) \cite{zografos2017increasing}.
 
 At the strategic level, the administrative management develops a cooperation practice where actions are coordinated between stakeholders, with bilateral communications and frequent reviews, so that the allocation may take place in accordance with all parties. The general objective is to match the requests made by the air operators with the declared infrastructure capacity, maximizing the number of accepted movements and, at the same time, minimizing the air operators’ operational cost to when they need to reschedule its flights outside the planned hours, due to the restrictions imposed at the airport \cite {gillen2016airport}. As it was explained, the main administrative management strategy is the IATA’s WASG, which has been adopted by local authorities in several countries \cite{zografos2017increasing, fairbrother2018development, cavusoglu2021minimum}.
 
-\subsubsection{Worldwide Airport Slot GuideIines (WASG) - IATA}
+\subsection{Worldwide Airport Slot GuideIines (WASG) - IATA}
 To provide a standard for slot management and operations planning, the IATA, together with Airports Council International (ACI) and Worldwide Airport Coordinators Group (WWACG), publishes the WASG \cite{WASG2020}.
 
 In general terms, the proposal to coordinate airports through the WASG aims to: (i) improve the connectivity of air services, promoting competitiveness in congested airports; (ii) provide slot schedules that meet demand and are consistent across seasons; (iii) ensure a fair, transparent and non-discriminatory slots allocation; (vi) promote efficient use of airports’ infrastructure; (v) guarantee market access to new air operators; (vi) provide a flexible slot management system for the industry, which can be adapt through local regulations and market conditions; and (vii) minimize congestion and delays caused by the allocation of slots with no parameters.
+
+\subsubsection{Slot Stakeholders}
 
 Slot management impacts several groups that are interested in the growing demand and the efficiency of the airport infrastructure use. Among them, the WASG highlights: 
 
@@ -91,6 +93,8 @@ The airport administrator must provide support to the facilitator or coordinator
 
 The authorities responsible for air control must communicate to the airport administrator the airspace capacity that modifies the airport infrastructure capacity parameters. The government that concedes the airport, must, through regulations, send the airport operator the conditions for using the infrastructure, as well as inform the investments that the airport operator needs to do in order to meet the projected target demand.
 
+\subsubsection{Capability Analysis}
+
 Prior to the slot allocation, a demand and capacity analysis is performed. This analysis must be carried out promptly for the declaration of capacity, one of the season's official activities. It takes into account the airport's ability to absorb movement demand, together with airspace limitations, in a level that the quantity of movements accepted in the airport infrastructure does not degrade its service levels, i.e.,  does not promote congestion and delays. The result is constraints regarding the runway(s), stand(s), terminal(s), gate(s), among many other relevant airport infrastructures.
 
 Another important limitation of capacity is environmental, i.e., the airport discusses the need to reduce the number of slots available when there is a relevant environmental impact (e.g., periods without movement due to noise pollution or due to environmental events that affects the aircrafts’ visual operations). 
@@ -101,3 +105,39 @@ In order to better understand the the slot management process, \refTab{tab:def} 
 
 \input{tab/tab_ref}
 
+\subsubsection{Airport level definition}
+
+At Level 1, due to the availability of adequate schedules for every demand, the allocation becomes free of priorities.
+
+At Level 2, the following allocation priority is applied: (i) movements that operated regularly in the previous equivalent season; (ii) annual movements, i.e., those which have operated with high regularity in the immediately preceding season; (iii) movements with more schedule operations for the current season; (iv) temporary operations; (v) movements restricted by operational factors; and (vi) any other type of movement. At Level 2, as well as a Level 3, a waiting list can be instituted for already congested periods.
+
+For Level 3, WASG proposes a mechanism that grants access to the high-demand market, opening opportunities for new operators to obtain slots at coveted times. For these, the allocation is made prioritizing a series of slots, temporary slots, and other operations. The series of slots can be allocated prioritizing: (i) historical slots with no changes, with changes other than in coordination parameters, or with changes that impact the coordination parameters within a flexibility range period; (ii) slot pool, containing a consistent division of the remaining slots for new entrants and non-new-entrants operators; and (iii) other movements. It should be noted that additional allocation factors are commonly applied to the Level 3 slot pool, such as annual movements within a flexibility range, movements with more operations for the current season, movements that are restricted to certain schedules due to regulation, movements with longer time at waiting lists, movements that have a specific type of service (e.g., passengers and cargo) or market (e.g., regional, long-distance and international destinations), movements with the greater number of frequencies, among other factors established by a stakeholders' committee.
+
+Each airport level has a different allocation priority. The \refFig{fig_pri_alloc} illustrates the allocations by airport level, specifying the prioritized movements.
+
+\figuraBib{3_allocation_en}{Allocation priority for each airport level}{}{fig_pri_alloc}{width=0.8\textwidth}%
+
+\subsubsection{Slot allocation: calendar activities}
+
+The slot allocation process, defined by the WASG activity calendar, has the following steps: 
+
+\begin{enumerate}
+    \item The calendar is published by the regulator for the immediately following season;
+    \item Airports must declare their capacity and coordination parameters within 7 days of initial submission;
+    \item Coordinators must provide details of historic slots through standard messages (SHL);
+    \item Air operators must review the historic slots received (AHD), contacting the coordinators if they disagree with the SHL, which results in an open communication between stakeholders;
+    \item The air operators send the initial submission with the requested slots (ISD);
+    \item The coordinators inform the air operators of the result of the initial submission, i.e., the airport's network after the distribution of demand (SAL);
+    \item Coordinators and air operators enter into dialogue to adjust offers for more advantageous slots, which can be done in a conference (SC), where exchanges of slots can occur between air operators, when local regulations allow them and when it is confirmed the advantage by the coordinator;
+    \item After the conferences, a continuous reallocation process begins until the limit for the return of slots (SRD), where any movement that will not be operated must be canceled;
+    \item With the reinstate of non-operational slots, the reference base (BDR) is created on which the 80\% regularity will be based; and
+    \item The last step takes place through operational planning, where the airline community plans the airspace, stands, and gates, among others infrastructure need to be prepared to receive the movements.
+\end{enumerate}
+
+After all the steps, new slots can be requested if feasible allocation. The season starts with the first planning operation on the last Sunday of October (Winter Season) or on the last Sunday of March (Winter Season). Simultaneously, the planning for the immediately following season takes place. The \refFig{fig_temp} illustrates the season system, with each season indicated by specific colors. Note that during the activities of a specific season, the activities related to the immediately following season are already started, in a continuous process.
+
+\figuraBib{2_temporadas_en}{Illustration of the calendar of activities stipulated by the WSGA}{}{fig_temp}{width=1\textwidth}%
+
+\subsubsection{Slot Monitoring}
+
+For the slots monitoring, WASG recommends that it should be divided into (i) pre-operation analysis, which identifies the slots misuses before the day when the movements occur; and (ii) post-operation analysis, which identifies whether a misuse has occurred and whether the operator has achieved the historic right in its slots. The objective is to ensure proper operation, avoid the waste of airport infrastructure, and open communication channels between stakeholders.
