@@ -130,7 +130,7 @@ The slot allocation process, defined by the \acrshort{WASG} activity calendar, h
     \item The coordinators inform the air operators of the result of the initial submission, i.e., the airport's network after the distribution of demand (\acrshort{SAL});
     \item Coordinators and air operators enter into dialogue to adjust offers for more advantageous slots, which can be done in a conference (\acrshort{SC}), where exchanges of slots can occur between air operators, when local regulations allow them and when it is confirmed the advantage by the coordinator;
     \item After the conferences, a continuous reallocation process begins until the limit for the return of slots (\acrshort{SRD}), where any movement that will not be operated must be canceled;
-    \item With the reinstate of non-operational slots, the reference base (\acrshort{BDR}) is created on which the 80\% regularity will be based; and
+    \item With the reinstate of non-operational slots, the reference base (\acrshort{BDR}) is created on which the 80\% regularity will be required for historic status for the next equivalent season; and
     \item The last step takes place through operational planning, where the airline community plans the airspace, stands, and gates, among others infrastructure need to be prepared to receive the movements.
 \end{enumerate}
 
@@ -145,3 +145,27 @@ For the slots monitoring, \acrshort{WASG} recommends that it should be divided i
 \subsection{Local Regulations: Brazil}
 
 As recommended by \acrshort{WASG}, the application of good practices must consider the regulations in place where the airport is located. Thus, as the present work studies airports in Brazil, it is necessary to understand the rules established by the \acrshort{ANAC}, highlighting their similarities and differences.
+
+\acrshort{ANAC} establishes, through Resolution No. 682, of July 07, 2022, the regulations and procedures for allocating slots at airports coordinated and facilitated. As established in \acrshort{WASG}, coordinated airports would be Level 3 airports, and airports of interest would be level 2 airports, with their specificities explained in resolution \cite{ANAC682}.
+
+The principles of slot coordination are stipulated to minimize the effects of infrastructure congestion at Brazilian airports, focusing on transparency, non-discrimination, impartiality, and efficient use of the declared infrastructure of each airport. It also establishes an activity calendar containing the declaration of capacity, distribution of slot requests, allocation responses, and slots monitoring.
+
+Unlike \acrshort{WASG}, the resolution established an \acrshort{ANAC} team that will be responsible for activities related to slot coordination at the level 3 airports. The figure \ref{fig_stakeholders_anac_coord} illustrates the relationship between stakeholders via \acrshort{ANAC} regulation. Thus, if the level of congestion at a given Brazilian airport exceeds the limit of its infrastructure capacity to absorb demand, in any of its allocation parameters (e.g., runway, patio, or terminal), or at due to the request of an interested party, \acrshort{ANAC} can declare it as coordinated. In this case, although the agency is also the government agency responsible for monitoring the development of the airport exploration plan, a separate \acrshort{ANAC} team will also be in charge of the administrative management of slots.
+
+\figuraBib{1a_stakeholders_en}{Relationship between stakeholders in the management of slots through the use of Brazilian resolution (level 3 airports)}{}{fig_stakeholders_anac_coord}{width=1\textwidth}%
+
+Another relevant difference in the distribution of slots in Brazil is that during the initial submission \acrshort{ISD} only requests that constitute a series of slots are processed, making temporary requests impossible. The order of priority also differs from \acrshort{WASG}, starting with (i) historic slots, (ii) historic slots that have changed, and (iii) new requests (respecting the division of the slots pool). Being the last one allocated in \acrshort{SAL}, prioritizing the continuation of the immediately previous season followed by the new operations.
+
+Some criteria, in addition to those mentioned above, can subsidize priority when there is a tie or conflict in slot allocation (not in order of priority): (i) the number of operations during the season; (ii) the largest aircraft, i.e., the number of seats or by the amount of cargo that can be transported; (iii) the operational efficiency in the previous equivalent season; (iv) best environmental efficiency; and (v) requests that best promote the airport competition, i.e., reduction of the \acrfull{HHI}.
+
+For the analysis of operational efficiency, the resolution presents a comparison of the reference base \acrshort{BDR} with the current base of slots for the season, taking into account the operations that did not use the available infrastructure without valid justification. The \acrfull{IR} is calculated using the \refEq{RI}. The \acrshort{IR} will be used to determine the historic status of the slots for the next equivalent season. 
+
+\equacao{RI}{IRs = \frac{Used\; slots}{Slots\; allocated\; in\;the\; BDR}}
+\\
+ Similar to \acrshort{WASG}, if the company falls below the minimum regularity target (in this case established by the coordinator), as well as when the intentional misuse of allocated slots is identified, the company may lose the historic slot. In the \acrshort{ANAC}’s regulation, when misuse happens, if the slots are requested at the next equivalent season, they would be inserted in the slots pool.
+
+ \acrshort{ANAC} also mitigates the misuse of slots through regulations on infractions and their respective administrative measures. If an air operator obtains a slot that it does not intend to use, wasting the airport infrastructure above the imposed limit, it will be considered an infraction punishable by fines established by the agency, as well as the impediment to obtain historic slots.
+
+ In Brazil, it is set to facilitated airports (i.e., level 2 airports) to prioritize the allocation of air operators’ slots series that operated in the last season (i.e., the annual movements). Since there are no historic slots, the resolution recommends lower priority for operators who misuse airport infrastructure. The figure \ref{fig_stakeholders_anac_facil} illustrates the stakeholders in an facilitated airport configuration stipulated by \acrshort{ANAC}. Note that both the airport and the slot facilitator are the same entity.
+
+ \figuraBib{1b_stakeholders_en}{Relationship between stakeholders in the management of slots through the use of Brazilian resolution (level 3 airports}{}{fig_stakeholders_anac_facil}{width=1\textwidth}%
