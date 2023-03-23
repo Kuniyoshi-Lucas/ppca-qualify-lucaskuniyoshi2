@@ -942,13 +942,17 @@
 	\begin{figure}[#1]%
 		\begin{center}%
 			\includegraphics[#6]{#2}%
-			\caption[#3.]{#3\ifx#4\empty\else~(Fonte: ~\cite{#4})\fi.\label{#5}}%
+			\caption[#3.]{#3\ifx#4\empty\else~Source: ~\cite{#4}\fi.\label{#5}}%
 		\end{center}%
 	\end{figure}%
 }%
+
+
+
 \newcommand{\figura}[5][!ht]{%
 	\figuraBib[#1]{#2}{#3}{}{#4}{#5}%
 }%
+
 
 \newcommand{\equacao}[2]{%
 	\begin{equation}%
