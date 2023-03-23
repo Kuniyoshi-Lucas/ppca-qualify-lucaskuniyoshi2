@@ -1,8 +1,73 @@
-\section{Research Methodology}
+\section{Planning the review}
 \label{section:Planning}
 
 To collect all the information needed for a better understanding of the main problem and approaches that have been used, a \acrfull{SLR} was conducted through a transparent process, avoiding biases and increasing reliability.
 
-The three steps process used in the literature review were: a (i) planning stage, where the need for a review was addressed, the researches questions were summarized into search terms, and a specific review protocol was created beforehand; therefore the (ii) review was conducted, identifying the researches which aimed to solve the slot allocation problem, selecting the primary studies, verifying their quality assessments, extracting the data, and synthesizing its information; after the (iii) review result was presented, in order to state what are the main researches in the central problem presented in this study, and how the methods here presented can fulfill some of the gaps left in the previous literature.
+The three steps process used in the literature review were: a (i) planning stage, where the need for a review was addressed, the researches questions were summarized into search terms, and a specific review protocol was created beforehand; therefore the (ii) review was conducted, identifying the researches which aimed to solve the slot allocation problem, selecting the primary studies, verifying their quality assessments, extracting the data, and synthesizing its information; after the (iii) review result was presented, in order to state what are the main researches in the central problem, and how the methods here presented can fulfill some of the gaps left in the previous literature.
+
+A better understanding of the airports' slot allocation problem, through a literature review, is needed in order to identify, analyze and interpret the different perspectives of the problem and how it has been approached, aiming to set the historical context and present how this paper can contribute for the problem solution. To achieve this objective, through a process that mitigate bias, conducting the data gathering in a transparent way, the review criteria and its steps were planned before their execution, following the guidelines presented in \cite{wohlin2012experimentation}. The \refFig{fig:experiment} presents the processes followed and their deliverables.
+
+\figuraBib{10_literaturaReview_en}{The literature review processes and their deliverables}{wohlin2012experimentation}{fig:experiment}{width=0.6\textwidth}%
+
+\subsection{The need for a review}
+
+The first step was the identification of the need for a review, i.e., understand how the problem has been addressed in past research and what are the previous limitation. It is common for airports to have different infrastructure configurations, i.e., runways, taxiways, gates, terminals. Also, different airports are placed in different environments, such as populated areas, which plays a critical role in their demand. Such specificities can introduce different points of view for the slot allocation, and it is expected different proposed solutions. Since the current paper raises a well-established problem, it is necessary to understand how it has been historically managed. Although a literature review could be achieved directly through a \textit{snowballing} process, it would only collect some points of view, introducing a search bias that could affect its reproducibility. A systematic review provides a better approach, resulting in a comprehensive understanding of the problem, delivered by a step-by-step protocol, which can be reviewed and improved. In this step of the review, it is assumed that no systematic review was made before, but if encountered it would be evaluated its contributions and limitations
+
+\subsection{The \acrshort{SLR} researches questions}
+
+The second step was the specification of research questions for the search conducted in the literature review. These questions set focus for the identification of the primary studies, as well as the extraction and analysis of the studies' information. To guarantee focus, PICO was used to break the questions down to their essential parts. It was also set an experimental design in the intervention part, in order to clarify what was the present paper approach, in the case it has been already used. In this step were produced the following research questions for the literature review:
+\begin{itemize}
+    \item \textbf{RQ1:} For the airports' slot allocation problem (P), what are the current approaches (I) that can provide an optimization in the initial slot allocation process (O)?
+    \item \textbf{RQ2:} For the airports' slot allocation problem (P), can a methodology using integer programming or machine learning (I) provide the better optimal solution, reducing negative impacts for airlines' initial allocation (O), than the current approaches (C)?
+\end{itemize}
+
+The question one can be divided in three specific question: (i) what the methodology used to solve the airport slot allocation problem? (ii) what are the constraints to the approaches? (iii) Are there any gaps or assumptions that could be explored?
+The second question wants to collect all information about models of the problem and how experimentation with algorithms are helping to tackle them.
+
+\subsection{Review protocol}
+
+The third, and last step for the planning part, was the development of a review protocol. This section acts not only as a backbone for the present paper research review but also is important for its reproducibility and validity evaluation. The following items, beyond the background and research question for the review addressed above, were taken into consideration:
+
+\subsubsection{Search strategy for primary studies}
+
+The main activities in this step are specifying the search string through the research question for the literature review, and applying this string in databases. The string used is a composition of the keywords: Airport, Slot, allocation, integer programming, machine learning, optimization, and solution. Treating the bag of words with search operators, the following search string was created: 
+\\
+
+\textit{(airport* \textbf{AND} "slot allocation" \textbf{AND}
+ optimization \textbf{AND} ("machine learning" \textbf{OR} "integer programming"))}. 
+\\
+
+\subsubsection{Search sources}
+
+This string should be used in the following databases in order to collect the primary researches:
+\begin{enumerate}
+    \item ACM Digital Library;
+    \item \acrfull{BASE};
+    \item EBSCO;
+    \item ScienceDirect;
+    \item Scopus;
+    \item \acrfull{TRID};
+    \item Web of Science;
+    \item CiteSeerX;
+    \item \acrfull{DBLP};
+    \item \acrfull{DOAJ};
+    \item IEEE Xplore;
+    \item JSTOR; and
+    \item Springer Link (Article section).
+\end{enumerate}
 
 
+There are two main criteria for selecting these databases: (i) they cover multidisciplinary subjects, or their specialized field are related with computer science or transportation studies, which are the main areas of the present paper; and (ii) these databases were described in \cite{kitchenham2007guidelines} by their coverage and capability to perform systematic searches via queries and filter, so that the final result of using this databases is a reproducible, with high recall and precision.  
+
+The \cite{gusenbauer2020academic} presents the databases as primary if they fulfill all the necessary quality requirements, such as the possibility of query refinement, string size criteria, server response criteria, use of Boolean operators, functionalities and reproducibility, otherwise they are considered supplementary. The databases 1 to 7 are primary databases and the other ones are supplementary. Additional search can be conducted in specific journals and conferences, as well as contacting researchers for aggregating material yet not published and grey literature. All additional material must be specified with its origin, in the interest of maintaining the reproducibility of the review.
+
+In this step, all identifiable false positives and duplicates between databases have to be removed. To validate the search string, the article \cite{ribeiro2018optimization}, which was already evaluated as a positive result, must be contained in one of the results of the databases, otherwise, a string reformulation is needed.
+
+\subsubsection{Study selection criteria}
+
+Some selection criteria of inclusion and exclusion were established beforehand to mitigate bias. Using the "First pass" approach \cite{keshav2007read} all the primary papers' titles, abstracts,introductions and conclusions will be read. 
+Articles are going to be included if they contain: 
+\begin{enumerate}
+    \item Any aspect of airport's slot allocation problem (models, perspectives, constraints, methods, technical consideration, etc.); and
+    \item Any solution for the airports' slot allocation problem using integer programming or machine learning.
+\end{enumerate}
