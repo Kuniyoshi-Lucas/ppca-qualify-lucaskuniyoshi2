@@ -71,3 +71,99 @@ Articles are going to be included if they contain:
     \item Any aspect of airport's slot allocation problem (models, perspectives, constraints, methods, technical consideration, etc.); and
     \item Any solution for the airports' slot allocation problem using integer programming or machine learning.
 \end{enumerate}
+
+\subsubsection{Study exclusion criteria}
+
+Articles are going to be excluded if: 
+\begin{enumerate}
+    \item They are duplicates or old versions (If it is found in more than one primary and/or secondary, it is kept in the databases sorted as shown in the topic 'Search sources' and removed from the others);
+    \item They were produced before 2001 (Commercial flights market regulation after the September 11 attack);
+    \item They are introducing new slot guidelines besides those explained in the IATA's WASG \cite{WASG2020};
+    \item They contain methods that solve Airports' slot problem through auction (Economic approaches); 
+    \item They are not accessible in full-text;
+    \item They are not related with the research questions, nor are tackling the main problem, but adjacent areas (ground delays, weather impacts in airports, etc.);
+    \item They have a specific context (September 11 attacks, COVID-19 pandemic, etc.); and
+    \item They are not in English nor Portuguese.
+\end{enumerate}
+
+\subsubsection{Study selection procedures}
+
+The first step of the selection is remove all papers that are obviously not relevant. After, it will be conducted by the main research assessment of each paper, using the selection and exclusion criteria, with a random samples of the paper. If more than one section of the paper fail to be relevant for the present review, the paper will be removed and a justification will be written.
+
+
+\subsubsection{Study quality assessment checklist and procedures}
+
+In addition to the selection procedures, it was established the assessment of the quality of the primary studies. The quality provides a better understand of the differences between studies, given importance to those which follow high level criteria. Kitchenham and Charters (\citeyear{kitchenham2007guidelines}) present a quality questionnaire based on 5 issues affecting the quality of the study, given 5 for a 'Yes' and 0 for a 'No' answer:
+    \begin{itemize}
+    \item \textbf{QQ1:} Is the data analysis process appropriate?
+    \item \textbf{QQ2:} Did studies carry out a sensitivity or residual analysis?
+    \item \textbf{QQ3:} Were accuracy statistics based on the raw data scale?
+    \item \textbf{QQ4:} Was the data selected at random (not selected for convenience) from several airports?
+    \item \textbf{QQ5:} How many datasets were used? Evaluation: More than 10 = 5; More than 1 but less than 10 = 1; and only one dataset = 0.
+    \end{itemize}
+
+It was also cited the reporting quality based on 4 questions \cite{kitchenham2007guidelines}, which were giving less weight, (1) for a 'Yes' and (-1) for a 'No' answer, than those that measure the study quality:
+    \begin{itemize}
+    \item \textbf{RQ1:} Is it clear what projects were used to construct each model?
+    \item \textbf{RQ2:} Is it clear how accuracy was measured?
+    \item \textbf{RQ3:} Is it clear what cross-validation method was used?
+    \item \textbf{RQ4:} Were all model construction methods fully defined (tools and methods used)?
+    \end{itemize}
+
+\subsubsection{Data extraction strategy}
+
+Data extraction was defined as a set of information that should be extracted for each study. This data are important for any attempt to summarize the results. 
+
+The following data, and their specific contexts, will be extract:
+
+\begin{enumerate}
+    \item (Design) Method used
+    \item(Conduct) Description of the data collection methods
+    \item(Conduct) If two "groups" are being compared, were they treat similarly in the study?
+    \item(Analysis) Was the statistical significance assessed?
+    \item(Conclusion) Are all the answered question answered?
+    \item(Conclusion) Are negative findings presented?
+    \item(Conclusion) How do results add to the literature?
+\end{enumerate}
+
+
+\section{Conducting the review}
+\label{section:Conducting}
+This section reports the outcome of the systematic search and selection process. It also presents the validity checks, including the data extraction and quality assessment process.
+
+\subsection{Identification of research}
+
+The research found 176 sources in 13 databases. It was found 30 duplicates (17.04\%), which were excluded from the review, resulting in 146 unique sources, as shown in the Table \ref{table*:results}.
+
+\input{tab/SLR_results}
+
+Most of the studies were found in the primary databases 81,81\%, being the main source the ScienceDirect with 42,04\% of total. The more specialized sources performed worst, collecting less studies related with slot allocation in airports, such as \acrshort{TRID} (transportation) and IEEE Xplore (computing science), which found 4.54\% and 0.56\% of the total, respectively. 
+
+Therefore, scrutiny was necessary to streamline these studies to relevant ones. Using the "first pass" \cite{wohlin2012experimentation}, the title of each study and their contents were briefly analyzed separately and randomly. Hence, all the papers that do not reflect the discussion about airport slot allocation problem or were unable to pass through the exclusion criteria were removed. The result was the identification of 47 primary studies, which is 26.70\% of the total first found.
+\\
+
+For the exclusion criteria: 
+\begin{enumerate}
+    \item One editorial was removed due to its scope being very wide, not detailing methods (1.01\%);
+    \item One article was not accessible (1.01\%);
+    \item Two articles were removed due to the year of publication (2.02\%);
+    \item 18 studies were not related with the airports' slot allocation problems (18.18\%);
+    \item 30 studies were solving the slot allocation problem with economic approaches (30.30\%), such as auctions (25 out of 30); and
+    \item 46 studies were focusing in adjacent area (47.47\%), such as ground delays (10 out of 47).
+\end{enumerate}
+
+After the selection procedure, the SLR resulted in 47 primary studies, showing a high number of primary false positives studies, i.e., studies that were brought by the research string but should not have been. The table \ref{table*:falsepositive} shows the primary studies per database and the false positive result, after the removal of the duplicates. After the duplication removal and exclusion criteria, Scopus, Web of Science, IEEE Xplore, and JSTOR ran out of studies. The overall primary false positive result was of 67.81\%, indicating that the search was comprehensive. 
+
+\input{tab/SLR_results2}
+
+The number of studies by year of publication is depicted in \refFig{fig:yearPublication}. The topic "airports' slot allocation" have been highlighted in recent years with 74,47\% of the studies selected being published in the last 5 years (2016-2021). The studied selection procedures are illustrated in the \refFig{fig:resumeSLR}.
+
+\figuraBib{12_yearPublication}{Number of papers by year of publication}{}{fig:yearPublication}{width=0.8\textwidth}%
+
+\begin{wrapfigure}{L}{6cm}
+\caption{The studies selection procedures and deliverable.}\label{fig:resumeSLR}
+\includegraphics[width=5.25cm]{11_SLR_brief}
+\end{wrapfigure} 
+
+\lipsum[1-2]
+
