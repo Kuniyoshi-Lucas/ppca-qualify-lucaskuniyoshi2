@@ -138,6 +138,7 @@
 %%
 
 
+% \RequirePackage[american, brazil]{babel}% Idiomas
 \RequirePackage[american, brazil]{babel}% Idiomas
 \RequirePackage[fixlanguage]{babelbib}%  Idioma das referências
 \RequirePackage[utf8]{inputenc}%         Arquivos na codificação UTF-8
@@ -912,7 +913,7 @@
 }%
 %\usepackage[round]{natbib}	% Citações padrão ABNT
 \usepackage{hyperref}
-\usepackage[alf,abnt-emphasize=bf,abnt-etal-list=0]{abntex2cite}
+\usepackage[alf,abnt-emphasize=bf,abnt-etal-list=0,abnt-and-type=&]{abntex2cite}
 \newcommand{\@conteudoPosTextual}{%
 	\@PosTextualNaoInclusofalse%
     \postextual%
@@ -938,21 +939,17 @@
 \newcommand{\refApendice}[1]{\@referencia{Appendix}{#1}}%
 \newcommand{\refAnexo}[1]{\@referencia{Annex}{#1}}%
 
-\newcommand{\figuraBib}[6][!ht]{%
-	\begin{figure}[#1]%
+\newcommand{\figuraBib}[6][H]{%<<<<<<< - Mude aqui para figura estava [!ht]
+	\begin{figure}[#1]% 
 		\begin{center}%
 			\includegraphics[#6]{#2}%
-			\caption[#3.]{#3\ifx#4\empty\else~Source: ~\cite{#4}\fi.\label{#5}}%
+			\caption[#3.]{#3\ifx#4\empty\else~(Fonte: ~\cite{#4})\fi.\label{#5}}%
 		\end{center}%
 	\end{figure}%
 }%
-
-
-
-\newcommand{\figura}[5][!ht]{%
+\newcommand{\figura}[5][H]{%%<<<<<<< - Mude aqui para figura estava [!ht]
 	\figuraBib[#1]{#2}{#3}{}{#4}{#5}%
 }%
-
 
 \newcommand{\equacao}[2]{%
 	\begin{equation}%

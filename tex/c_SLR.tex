@@ -1,43 +1,64 @@
 \section{Planning the review}
 \label{section:Planning}
 
-To collect all the information needed for a better understanding of the main problem and approaches that have been used, a \acrfull{SLR} was conducted through a transparent process, avoiding biases and increasing reliability.
+To gain a comprehensive understanding of the main problem and existing approaches, a \acrfull{SLR} was conducted following a transparent process to minimize bias and enhance reliability.
 
-The three steps process used in the literature review were: a (i) planning stage, where the need for a review was addressed, the researches questions were summarized into search terms, and a specific review protocol was created beforehand; therefore the (ii) review was conducted, identifying the researches which aimed to solve the slot allocation problem, selecting the primary studies, verifying their quality assessments, extracting the data, and synthesizing its information; after the (iii) review result was presented, in order to state what are the main researches in the central problem, and how the methods here presented can fulfill some of the gaps left in the previous literature.
+The \acrshort{SLR} adhered to a three-step methodology: (i) Planning, this stage involved defining the research need, translating research questions into specific search terms, and developing a detailed review protocol prior to data collection; (ii) Conducting the Review, this stage encompassed identifying relevant research addressing the slot allocation problem, selecting primary studies, assessing their quality, extracting key data, and synthesizing the findings; and (iii) Presenting the Review Results, this stage aimed to summarize the key research findings related to the central problem and demonstrate how the proposed methods in this paper can address identified gaps in the existing literature.
 
-A better understanding of the airports' slot allocation problem, through a literature review, is needed in order to identify, analyze and interpret the different perspectives of the problem and how it has been approached, aiming to set the historical context and present how this paper can contribute for the problem solution. To achieve this objective, through a process that mitigate bias, conducting the data gathering in a transparent way, the review criteria and its steps were planned before their execution, following the guidelines presented in \cite{wohlin2012experimentation, shamseer2015prisma}. The \refFig{fig:experiment} presents the processes followed and their deliverables.
+A thorough understanding of airport slot allocation necessitates a comprehensive literature review to identify, analyze, and interpret diverse perspectives on the problem and its existing solutions. This review provides historical context and clarifies the potential contributions of this paper. To ensure a bias-mitigated and transparent data collection process, the review criteria and procedures were meticulously planned before execution, adhering to the guidelines outlined in \citeonline{wohlin2012experimentation} and \citeonline{shamseer2015prisma}. \refFig{fig:experiment} illustrates the sequential processes and their respective deliverables.
 
-\figuraBib{10_literaturaReview_en}{The literature review processes and their deliverables}{wohlin2012experimentation}{fig:experiment}{width=0.6\textwidth}%
+\figuraBib{10_literaturaReview_en}{The literature review processes and their deliverables. Adapted from: \cite{wohlin2012experimentation}}{}{fig:experiment}{width=0.6\textwidth}%
 
 \subsection{The need for a review}
 
-The first step was the identification of the need for a review, i.e., understand how the problem has been addressed in past research and what are the previous limitation. It is common for airports to have different infrastructure configurations, i.e., runways, taxiways, gates, terminals. Also, different airports are placed in different environments, such as populated areas, which plays a critical role in their demand. Such specificities can introduce different points of view for the slot allocation, and it is expected different proposed solutions. Since the current paper raises a well-established problem, it is necessary to understand how it has been historically managed. Although a literature review could be achieved directly through a \textit{snowballing} process, it would only collect some points of view, introducing a search bias that could affect its reproducibility \cite{jalali2012systematic}. A systematic review provides a better approach, resulting in a comprehensive understanding of the problem, delivered by a step-by-step protocol, which can be reviewed and improved. In this step of the review, it is assumed that no systematic review was made before, but if encountered it would be evaluated its contributions and limitations
+The first step was the identification of the need for a review, i.e., understand how the problem has been addressed in past research and what are the previous limitation. 
+
+Airport infrastructure exhibits significant variability, encompassing distinct configurations of runways, taxiways, gates, and terminals. Furthermore, airports operate within diverse environments, including densely populated areas, which significantly influences demand. These unique characteristics can lead to diverse perspectives on the slot allocation problem and consequently, a range of proposed solutions. Given the well-established nature of the slot allocation problem, a thorough understanding of its historical management is crucial.
+
+
+While a \textit{snowballing} approach could potentially gather relevant literature, it carries the risk of introducing search bias, potentially limiting the comprehensiveness and reproducibility of the review \cite{jalali2012systematic}. A systematic review offers a more rigorous approach, ensuring a comprehensive understanding of the problem through a well-defined, step-by-step protocol that is subject to review and potential improvement.
+
+This review assumed the absence of prior systematic reviews on this specific topic. However, if any such reviews were encountered, their contributions and limitations would be carefully evaluated
 
 \subsection{The \acrshort{SLR} researches questions}
 
-The second step was the specification of research questions for the search conducted in the literature review. These questions set focus for the identification of the primary studies, as well as the extraction and analysis of the studies' information. To guarantee focus, PICO was used to break the questions down to their essential parts. It was also set an experimental design in the intervention part, in order to clarify what was the present paper approach, in the case it has been already used. In this step were produced the following research question for the literature review:
+The second step involved formulating specific research questions to guide the literature search. These research questions serve as crucial focal points for identifying relevant primary studies and extracting and analyzing relevant information. To ensure clarity and focus, the PICO framework was employed to systematically break down each research question into its essential components: Population, Intervention, Comparison, and Outcome.
+
+Furthermore, the 'Intervention' component was specifically defined to clarify the approach of the present paper and determine whether similar approaches have been previously utilized in the literature.
+
+The following research questions were formulated for this literature review:
+
 \begin{itemize}
-    \item \textbf{RQ1:} For medium and large airports (P), how integer programming, queue theory, and machine learning (I)  have been used to reduce the number of changes in the airlines' initial allocation and optimize the use of the airports' infrastructure (O) compared to the \acrshort{IATA}'s guidelines for the administrative management of slots (C)?
+    \item \textbf{RQ1:} In medium and large airports (P), how do integer programming, queue theory, and machine learning techniques (I)  compared to the \acrshort{IATA}'s guidelines for the administrative management of slots (C) in terms of their effectiveness in reducing the number of changes to airlines' initial allocations and optimizing airport infrastructure utilization (O)?
 \end{itemize}
 
-The inquiry can be subdivided into three distinct questions: (i) what the methodology used to solve the airport slot allocation problem? (ii) what are the constraints to the approaches? (iii) Are there any gaps or assumptions that could be explored? It aims to collect the most valuable information about the models created to solve the problem and how experimentation with algorithms are helping them to tackle it.
+To further refine the inquiry, the following three sub-questions were formulated: (i) What methodologies have been employed to solve the airport slot allocation problem? (ii) What are the primary constraints associated with these approaches? (iii) Are there any identified gaps or underlying assumptions that warrant further exploration? It aims to collect the most valuable information about the models created to solve the problem and how experimentation with algorithms are helping them to tackle it.
 
 \subsection{Review protocol}
 
-The third, and last step for the planning part, was the development of a review protocol. This section acts not only as a backbone for the present paper research review but also is important for the evaluation of its reproducibility and validity. The following items were taken into consideration:
+The third and final step in the planning phase involved the development of a comprehensive review protocol. This protocol serves as the foundation for the current research review and plays a crucial role in ensuring the reproducibility and validity of the study. The following key elements were considered during the development of the review protocol:
 
 \subsubsection{Search strategy for primary studies}
 
-The main activities in this step are specifying the search string through the research question for the literature review, and applying this string in databases. The string used is a composition of the keywords: Airport, Slot, allocation, integer programming, queue theory, machine learning, optimization, IATA slot guidelines. Treating the bag of words with search operators, the following search string was created: 
+The primary activities within this step involved:
+
+\begin{itemize}
+    \item \textbf{Formulating a comprehensive search string:} this was achieved by translating the research questions into a set of relevant keywords.
+    \item \textbf{Executing database searches:} the formulated search string was then applied to a range of relevant academic databases.
+\end{itemize}
+
+The search string was constructed using a combination of keywords, including: "Airport", "Slot", "Allocation", "Integer Programming", "Queue Theory", "Machine Learning", "Optimization", and "IATA Slot Guidelines".
+
+To refine the search, boolean operators were employed to effectively combine these keywords, resulting in the following search string:
 \\
 
 \textit{(airport* \textbf{AND} "slot allocation" \textbf{AND}
- optimization \textbf{AND} ("IATA guidelines" \textbf{OR} "Worldwide Airport Slot Guidelines") \textbf{AND} ("machine learning" \textbf{OR} "integer programming" \textbf{OR} "queue theory")) \textbf{AND} [E-Publication Date: (01/01/2002 \textbf{TO} *)]}. 
+ optimization \textbf{AND} ("IATA guidelines" \textbf{OR} "Worldwide Airport Slot Guidelines") \textbf{AND} ("machine learning" \textbf{OR} "integer programming" \textbf{OR} "queue theory")) \textbf{AND} [E-Publication Date: (01/01/2002 \textbf{TO} 01/12/2023)]}. 
 \\
 
 \subsubsection{Search sources}
 
-This string should be used in the following databases in order to collect the primary researches:
+The formulated search string was subsequently employed to systematically search the following academic databases to identify relevant primary research studies:
 \begin{enumerate}
     \item ACM Digital Library;
     \item \acrfull{BASE};
@@ -54,113 +75,183 @@ This string should be used in the following databases in order to collect the pr
 \end{enumerate}
 
 
-There are two main criteria for selecting these databases: (i) they cover multidisciplinary subjects, or their specialized field are related with computer science or transportation studies, which are the main areas of the present paper; and (ii) these databases were described in \cite{kitchenham2007guidelines} by their coverage and capability to perform systematic searches via queries and filter, so that the final result of using this databases is a reproducible, with high recall and precision.  
+The selection of databases was guided by two primary criteria: (i) Multidisciplinary Coverage, the databases were chosen to encompass both multidisciplinary subjects and those specializing in computer science or transportation studies, aligning with the core research areas of this paper; and (ii)  Search Capability, the databases were selected based on their comprehensive coverage and robust search capabilities, as outlined in \citeonline{kitchenham2007guidelines}, this selection criterion prioritizes databases that facilitate systematic searches through the utilization of queries and filters, ultimately ensuring the reproducibility of the search process with high recall and precision.  
 
-The \cite{gusenbauer2020academic} presents the databases as primary if they fulfill all the necessary quality requirements, such as the possibility of query refinement, string size criteria, server response criteria, use of Boolean operators, functionalities and reproducibility, otherwise they are considered supplementary. The databases 1 to 7 are primary databases and the other ones are supplementary. No additional search, conducted in specific journals and conferences, as well as contacting researchers for aggregating material yet not published and grey literature, was made.
+Following the criteria established by \citeonline{gusenbauer2020academic}, databases were classified as 'primary' if they met all necessary quality requirements, including the possibility of query refinement, string size criteria, server response criteria, use of boolean operators, functionalities and reproducibility. Databases 1 to 7 were designated as primary databases, while the remaining databases were considered supplementary. No additional search strategies (e.g., searching specific journals and conference proceedings or contacting researchers to obtain unpublished material or grey literature) were employed.
 
-In this step, all identifiable false positives and duplicates between databases must be removed. To validate the search string, the article \cite{ribeiro2018optimization}, which was already evaluated as a positive result, must be contained in one of the results of the databases, otherwise, a string reformulation is needed.
+This step necessitates the meticulous removal of all identifiable false positives and duplicate entries across the searched databases.
+
+To validate the search string's effectiveness, the article by \citeonline{ribeiro2018optimization} was used as a benchmark. This article, previously identified as relevant to the research scope, must be retrieved within the search results from at least one of the targeted databases. Failure to retrieve this article necessitates a reformulation of the search string.
 
 \subsubsection{Study selection criteria}
+To mitigate bias, specific inclusion and exclusion criteria were established prior to the screening process. Employing the "First Pass" approach as established by \citeonline{keshav2007read}, all primary papers were screened by carefully reviewing their titles, abstracts, introductions, and conclusions
 
-Some selection criteria of inclusion and exclusion were established beforehand to mitigate bias. Using the "First pass" approach \cite{keshav2007read} all the primary papers' titles, abstracts, introductions and conclusions will be read. 
-Articles are going to be included if they contain: 
+\noindent \textit{Inclusion criteria:}
+
 \begin{enumerate}
-    \item Any aspect of airport's slot allocation problem (models, perspectives, constraints, methods, technical consideration, etc.); and
-    \item Any solution for the airports' slot allocation problem using integer programming, queue theory, or machine learning.
+
+    \item The study must address any aspect of the airport slot allocation problem, encompassing models, perspectives, constraints, methods, technical considerations, etc.; and
+    \item The study must propose a solution for the airport slot allocation problem utilizing integer programming, queue theory, or machine learning techniques.
 \end{enumerate}
 
 \subsubsection{Study exclusion criteria}
 
-Articles are going to be excluded if: 
+\textit{Exclusion criteria:}
 \begin{enumerate}
-    \item They are duplicates or old versions (If it is found in more than one primary and/or secondary, it is kept in the databases sorted as shown in the topic "Search sources" and removed from the others);
-    \item They were produced before 2001 (Commercial flights market regulation after the September 11 attack);
-    \item They are introducing new slot guidelines besides those explained in the IATA's WASG \cite{WASG2020};
-    \item They contain methods that solve Airports' slot problem through auction (Economic approaches); 
-    \item They are not accessible in full-text;
-    \item They are not related with the research questions, nor are tackling the main problem, but adjacent areas (ground delays, weather impacts in airports, etc.);
-    \item They have a specific context (September 11 attacks, COVID-19 pandemic, etc.); and
-    \item They are not in English nor Portuguese.
+    \item \textbf{Duplicates and Old Versions}, articles are excluded if they are duplicates of other included articles or represent older versions of the same study. If an article appears in multiple primary and/or secondary databases, it is retained in the database listed first in the "Search Sources" section and removed from the remaining databases.
+    \item \textbf{Publication Date}, articles published before 2001 are excluded. This timeframe is chosen to focus on research conducted after the significant market regulations implemented following the September 11th attacks.
+    \item \textbf{Scope of Slot Guidelines}, articles introducing slot allocation guidelines beyond those outlined in the \acrshort{IATA}'s Worldwide Slot Guidelines (\acrshort{WASG}) \cite{WASG2020} are excluded.
+    \item \textbf{Focus on Auction-based Solutions}, articles that primarily focus on auction-based economic approaches to solving the airport slot allocation problem are excluded.
+    \item \textbf{Lack of Full-Text Access}, articles that are not accessible in full-text format are excluded.
+    \item \textbf{Irrelevant Scope}, articles that are not directly relevant to the research questions and do not address the core slot allocation problem, but instead focus on adjacent areas such as ground delays or weather impacts on airports, are excluded.
+    \item \textbf{Specific Context}, articles that focus on specific contexts, such as the September 11th attacks or the COVID-19 pandemic, are excluded to maintain a broader and more generalizable perspective.
+    \item \textbf{Language}, articles not published in English or Portuguese are excluded.
 \end{enumerate}
 
 \subsubsection{Study selection procedures}
 
-The first step of the selection is remove all papers that are obviously not relevant. After, it will be conducted by the main research assessment of each paper, using the selection and exclusion criteria, with a random samples of the paper. If more than one section of the paper fail to be relevant for the present review, the paper will be removed and a justification will be written.
+The removal of all irrelevant papers was conducted through a thorough assessment of each study against the established selection and exclusion criteria. This process involved a careful review of titles, abstracts, and conclusions, with a focus on identifying and excluding papers that did not meet the inclusion criteria. If more than one section of the paper (title, abstract, or conclusion) was deemed irrelevant to the scope of this review, the paper was excluded, and a concise justification for its exclusion was recorded.
 
+\subsubsection{Narrative Synthesis}
 
-\subsubsection{Study quality assessment checklist and procedures}
-
-In addition to the selection procedures, it was established the assessment of the quality of the primary studies. The quality provides a better understand of the differences between studies, given importance to those which follow high level criteria. Kitchenham and Charters (\citeyear{kitchenham2007guidelines}) present a quality questionnaire based on 5 issues affecting the quality of the study, given 5 for a 'Yes' and 0 for a 'No' answer:
-    \begin{itemize}
-    \item \textbf{QQ1:} Is the data analysis process appropriate?
-    \item \textbf{QQ2:} Did studies carry out a sensitivity or residual analysis?
-    \item \textbf{QQ3:} Were accuracy statistics based on the raw data scale?
-    \item \textbf{QQ4:} Was the data selected at random (not selected for convenience) from several airports?
-    \item \textbf{QQ5:} How many datasets were used? Evaluation: More than 10 = 5; More than 1 but less than 10 = 1; and only one dataset = 0.
-    \end{itemize}
-
-It was also cited the reporting quality based on 4 questions \cite{kitchenham2007guidelines}, which were giving less weight, (1) for a 'Yes' and (-1) for a 'No' answer, than those that measure the study quality:
-    \begin{itemize}
-    \item \textbf{RQ1:} Is it clear what projects were used to construct each model?
-    \item \textbf{RQ2:} Is it clear how accuracy was measured?
-    \item \textbf{RQ3:} Is it clear what cross-validation method was used?
-    \item \textbf{RQ4:} Were all model construction methods fully defined (tools and methods used)?
-    \end{itemize}
-
-\subsubsection{Data extraction strategy}
-
-Data extraction was defined as a set of information that should be extracted for each study. This data are important for any attempt to summarize the results. 
-
-The following data, and their specific contexts, will be extract:
-
-\begin{enumerate}
-    \item (Design) Method used
-    \item(Conduct) Description of the data collection methods
-    \item(Conduct) If two "groups" are being compared, were they treat similarly in the study?
-    \item(Analysis) Was the statistical significance assessed?
-    \item(Conclusion) Are all the answered question answered?
-    \item(Conclusion) Are negative findings presented?
-    \item(Conclusion) How do results add to the literature?
-\end{enumerate}
-
+ Given the anticipated variability and potential differences among the included studies – stemming from the application of diverse methodologies across varied samples (e.g., different airports) and potentially leading to methodological heterogeneity - this review will employ a narrative synthesis approach to synthesize the extracted data and assess the overall body of evidence \cite{campbell2018improving, campbell2019lack}. 
+ 
+ This method is particularly suitable when the heterogeneity of the included studies precludes statistical meta-analysis \cite{popay2006guidance, campbell2018improving, campbell2019lack}. 
+ 
+ Drawing upon the guidance for Narrative Synthesis outlined by \citeonline{popay2006guidance}, this study will undertake the following key stages: 
+ \begin{enumerate}
+     \item \textbf{Developing a theoretical understanding of the problem:} This stage will involve constructing an initial framework or theory of how the identified software problem is conceptualized and addressed within the existing literature, considering the different approaches and contexts. 
+     \item \textbf{Developing a preliminary synthesis of findings through tabulation:} A systematic tabulation of key characteristics and findings from each included study will be created. This will facilitate an initial overview and comparison of the evidence.
+     \item \textbf{Exploring relationships within the data using concept mapping:} Concept mapping techniques will be employed to visually represent and explore the relationships between different concepts, interventions, outcomes, and contextual factors identified across the studies. This will aid in identifying patterns and potential associations. 
+     \item \textbf{Assessing the robustness of the synthesis through critical reflection:} The final stage will involve a critical discussion of the synthesis process, considering the strengths and limitations of the included studies (as determined by the quality assessment), the potential for bias, and the overall confidence in the synthesized findings. This reflection will explicitly address the impact of methodological heterogeneity on the conclusions drawn.
+ \end{enumerate}
 
 \section{Conducting the review}
 \label{section:Conducting}
-This section reports the outcome of the systematic search and selection process. It also presents the validity checks, including the data extraction and quality assessment process.
+This section presents the outcomes of the systematic search and selection process, including a comprehensive review of the validity checks implemented throughout the study. These checks encompassed data extraction procedures and a rigorous quality assessment of the included studies.
 
 \subsection{Identification of research}
 
-The research found 31 sources in 12 databases. It was found 9 duplicates (29.03\%), which were excluded from the review, resulting in 22 unique sources, as shown in the Table \ref{table*:results}.
+The initial search yielded 31 sources across 12 databases. After removing 9 duplicates (29.03\%), a total of 22 unique sources remained for further analysis, as detailed in Table \ref{table*:results}.
 
 \input{tab/SLR_results}
 
-All the studies were found in the primary databases, being the main source the ScienceDirect with 59,09\% of the total. Including duplicates, the databases that did not return studies were \acrshort{DBLP}, \acrshort{DOAJ}, and IEEE Xplore. 
+All studies were identified within the designated primary databases, with ScienceDirect emerging as the most prolific source, contributing 59.09\% of the total retrieved articles. Notably, three databases – \acrshort{DBLP}, \acrshort{DOAJ}, and IEEE Xplore – did not yield any results in the initial search, even when considering duplicates.
 
-To enhance comprehension of articles pertinent to the overarching theme of this study, a thorough examination was undertaken to refine and isolate those directly relevant to the research. Using the "first pass" \cite{wohlin2012experimentation}, the title of each study and their contents were briefly analyzed separately and randomly. Hence, all the papers that do not reflect the discussion about airport slot allocation problem or were unable to pass through the exclusion criteria were removed. The result was the identification of 47 primary studies, which is 26.70\% of the total first found.
+To ensure a comprehensive understanding of the relevant literature, a rigorous screening process was implemented. Following the "first pass" approach outlined by \citeonline{wohlin2012experimentation}, each study's title and abstract were independently and randomly reviewed. Studies were excluded if they did not directly address the airport slot allocation problem or failed to meet the established inclusion criteria. This screening process resulted in the selection of 19 primary studies, representing 86.36\% of the unique sources identified.
 \\
 
 For the exclusion criteria: 
 \begin{enumerate}
-    \item One editorial was removed due to its scope being very wide, not detailing methods (1.01\%);
-    \item One article was not accessible (1.01\%);
-    \item Two articles were removed due to the year of publication (2.02\%);
-    \item 18 studies were not related with the airports' slot allocation problems (18.18\%);
-    \item 30 studies were solving the slot allocation problem with economic approaches (30.30\%), such as auctions (25 out of 30); and
-    \item 46 studies were focusing in adjacent area (47.47\%), such as ground delays (10 out of 47).
+    \item One article was not accessible;
+    \item One article was reviewing the slot allocation problem through economic approaches; and
+    \item One article was focusing in adjacent area (flight planning optimization).
 \end{enumerate}
 
-After the selection procedure, the SLR resulted in 47 primary studies, showing a high number of primary false positives studies, i.e., studies that were brought by the research string but should not have been. The table \ref{table*:falsepositive} shows the primary studies per database and the false positive result, after the removal of the duplicates. After the duplication removal and exclusion criteria, Scopus, Web of Science, IEEE Xplore, and JSTOR ran out of studies. The overall primary false positive result was of 67.81\%, indicating that the search was comprehensive. 
+Following the selection procedures, the systematic literature review (SLR) yielded 19 primary studies. Notably, 13.63\% of the initial search results were identified as false positives, i.e., studies retrieved by the search string but ultimately deemed irrelevant to the research scope. Table \ref{table*:falsepositive} provides a summary of the primary studies identified per database, including the number of false positives observed after duplicate removal.
 
 \input{tab/SLR_results2}
 
-The number of studies by year of publication is depicted in \refFig{fig:yearPublication}. The topic "airports' slot allocation" have been highlighted in recent years with 74,47\% of the studies selected being published in the last 5 years (2016-2021). The studied selection procedures are illustrated in the \refFig{fig:resumeSLR}.
+The distribution of studies by year of publication is visualized in \refFig{fig:yearPublication}. Notably, the subject of this investigation has gained significant attention in recent years, with 43.37\% of the selected sources published between 2020 and 2023. The selection process is illustrated in \refFig{fig:resumeSLR}.
 
-\figuraBib{12_yearPublication}{Number of papers by year of publication}{}{fig:yearPublication}{width=0.8\textwidth}%
+\figuraBib{12a_yearPublication}{Number of studies by year of their publication}{}{fig:yearPublication}{width=0.8\textwidth}%
 
-\begin{wrapfigure}{L}{6cm}
-\caption{The studies selection procedures and deliverable.}\label{fig:resumeSLR}
-\includegraphics[width=5.25cm]{11_SLR_brief}
-\end{wrapfigure} 
+\figuraBib{11a_SLR_brief}{The studies selection procedures and deliverable. Adapted from: \cite{page2021prisma}}{}{fig:resumeSLR}{width=1.0\textwidth}%
 
-\lipsum[1-2]
 
+\section{Review report process}
+
+\subsection{Theoretical understanding}
+Initially, it is feasible to approach the review by synthesizing multiple pieces of evidence extracted from the individual studies included, in order to construct a model that highlights key concepts or issues pertinent to the review question and delineates the relationships among them \cite{popay2006guidance}.
+
+The air transport industry, encompassing airlines, airports, and local regulatory agencies, has sought methods to utilize slot allocation coordination as a means to optimize the available airport infrastructure. This approach presents a viable solution to address the rapid increase in air transport demand in the short term. Consequently, two primary questions arise: (i) how can slot distribution be optimized to align with the airport's available infrastructure, and (ii) what are the constituent elements of the airport's operational capacity?
+
+Stakeholders are pursuing a model that facilitates the efficient utilization of airport infrastructure, reduces delays, enhances the probability of airlines retaining allocated slots, and ensures the necessary equity in the distribution of these scarce resources. The long-term impact of such a model includes a more comprehensive understanding of airport limitations, as well as the improvement of the financial performance of all stakeholders and the current slot regulations. 
+
+The figure \refFig{fig:narrative_one}.provided illustrates the theoretical framework of the problem, progressing from the desired impact and its associated benefits and metrics, to the principal activities required to initiate the model for a more effective resolution of the initial problem (theory of change).
+
+The validity of the initial understanding will be demonstrated within the following sections of the report. The aim is to answer the research questions posed by the systematic literature review
+
+\figuraBib{13_narrative_section1}{Theoretical understanding of the problem: Linking slot optimization and airport sensitivity to enhanced allocation and financial outcomes. Adapted from: \cite{popay2006guidance, eduspots_theoryofchange}}{}{fig:narrative_one}{width=1.0\textwidth}%
+
+
+\subsection{Preliminary synthesis of findings through tabulation}
+
+To synthesize the information derived from the 19 selected studies, the Table \ref{table*:SRL_narrative_table} was constructed. The objective of this table was to systematically present each study, detailing its title, applied methodologies, population under investigation, and principal findings. The numerical designation assigned to each article will serve as a consistent reference throughout this report.
+
+Within the table, in addition to the primary methodologies employed in each study, the applicability of each model was determined based on the coverage classification—namely, whether it pertained to a single airport or an airport network \cite{zografos2017increasing}. Furthermore, to facilitate a more comprehensive understanding of the approaches and to underscore the heterogeneity in models, data, and results across the cases, the specific population of each study is also indicated (e.g., the name of the airport or the number of airports comprising the airline network). The main results of each study were explicitly stated in the table, albeit not exhaustively, encompassing both implicit and explicit outcomes and contributions of the respective models.
+
+\input{tab/SLR_results_titles_3}
+\clearpage
+
+\subsection{Exploring relationships within the data: Concept Mapping}
+
+To address the information presented in each of the studies, by exploring their interrelationships through the topics of motivation, applied methods, obtained results, and limitations, thus illustrating the heterogeneity among them, the present systematic literature review developed a conceptual map.
+
+The simplified map, illustrated in the \refFig{fig:narrative_two}, presents four subdivisions for enhanced comprehension: (i) Motivation for Improvement, wherein the principal reasons for the development of studies aimed at improving slot allocation at airports will be expounded and interrelated; (ii) Methods, wherein the approaches will be explained, along with their continuous developments and enhancements; (iii) Results, wherein, given the applied methods, the main contributions obtained are presented; and (iv) Limitations, wherein aspects not fully developed within the respective research, those indicated for future work, and gaps in the methodological approaches are elucidated.
+
+The relationships among the studies within each subdivision will be elaborated upon in subsequent subsections. It is pertinent to note that the numerical designation of each study, as presented in the Table \ref{table*:SRL_narrative_table}, will be employed to simplify the connections between them.
+
+\figuraBib{14a_narrative_section3_total}{Simplified conceptual mapping of the findings from Slot Allocation Problem \acrlong{SLR}}{}{fig:narrative_two}{width=0.4\textwidth}%
+
+\subsubsection{Concept Mapping: Motivations for improvement}
+
+Three principal branches originate from the motivations identified among the selected studies: (i) the anticipated increase in air traffic, attributed to the growing number of global passengers; (ii) the balance between efficiency and fairness in slot allocations, representing a pursuit of optimal infrastructure distribution that maximizes its utilization, alongside an approach ensuring that the scarce resource is allocated with transparency, non-discrimination, and equality; and (iii) the inherent complexity of the slot allocation problem, given its combinatorial nature. The \refFig{fig:narrative_three} illustrates the three main branches and their sub-branches, depicting motivations that are a result of the former.
+
+The increasing development of the civil air transport industry is consistently identified across all studies as a primary reason to enhance the efficiency of slot management methods. This factor, combined with the current capacity constraints of airports – whether due to infrastructure limitations or regulations – leads to congestion. This congestion is responsible for widespread delays within airline networks, which can generate costs for all stakeholders in the industry \cite{ribeiro2018optimization, dixit_algorithmic_2023}.
+
+Prior to the COVID-19 pandemic, global passenger volume was projected to reach 11.4 billion by 2024, representing 124\% of the 2019 level. Current projections for 2024 estimate a global passenger volume of 9.5 billion, which is 104\% of the 2019 level, indicating a 9\% year-over-year growth from the 2023 volume \cite{ACI_AirTravelDemand2025}. Consequently, despite the impact of the pandemic on the aviation industry, persistent congestion is anticipated at airports worldwide due to this continued growth in demand. This congestion often results in decreased flight punctuality and a diminished passenger experience \cite{liu_research_2022}.
+
+\figuraBib{14b_narrative_section3_motivation}{Main motivations identified in the studies for addressing the airport slot allocation problem}{}{fig:narrative_three}{width=0.7\textwidth}%
+
+The selected studies highlight the intensifying imbalance between rapidly growing air traffic and limited airspace, leading to reduced flight punctuality and increased delays \cite{corolli_time_2014, gillen2016airport, pellegrini_sosta_2017, jacquillat_interairline_2018, ribeiro2018optimization, jacquillat_roadmap_2018, zografos_bi-objective_2019, lambelho_assessing_2020, zeng_data-driven_2021, kuran_heuristic_nodate, keskin_optimal_2023, wang_slot_2023}. This situation underscores the critical need for effective slot allocation strategies to mitigate these adverse effects.
+
+In 2019, the number of flights operated by passenger airlines in mainland China reached 4.611 million, a 6.1\% increase compared to the previous year \cite{wang_distribution_2022}. These authors, citing \citeonline{CAAC_StatisticalBulletin2019}, indicate a trend of increasing air passenger traffic in China. The average delay per passenger flight in 2019 was 14 minutes, representing a slight decrease compared to 2018. Such operational restrictions can lead to lost or displaced demand, negatively impacting the total revenue for stakeholders \cite{jacquillat_roadmap_2018}
+
+\citeonline{benlic_heuristic_2018} shows a projection that indicates that air traffic in Europe will increase to 14.4 million flights by 2035. Consequently, in their most likely scenario, approximately 12\% of demand will be unaccommodated, leading to delays.
+
+ \citeonline{corolli_time_2014} and \citeonline{zografos2017increasing} highlight that the rapid growth of air transport services in Europe, coupled with institutional limitations on the construction of new airports, has resulted in congestion issues manifested by increasing delays. In 2016, the average delay per flight within the European Civil Aviation Conference area was 18 minutes \cite{Eurocontrol_AnnualReport2016}. Furthermore, the authors note that \acrfull{ATM} inefficiencies in the European Union caused 10.8 million minutes of flight delays in 2012, incurring costs of €4.5 billion for airspace users and €6.7 billion for passengers, and generating 7.8 million tonnes of excess CO2 emissions \cite{IATA_SESFactsheet2014a}.
+
+\citeonline{ribeiro2018optimization} cited data on flight punctuality in the United States and Europe. According to \citeonline{EUROCONTROL_USEuropeATM2024}, 80.1\% of flights arriving in the U.S. were within 15 minutes of their scheduled time, whereas in Europe, this figure was 76.5\%.
+
+\citeonline{ribeiro_large-scale_2019} assert that the growth in air traffic demand has surpassed the available capacity at numerous airports globally, leading to the frequent occurrence of flight delays and substantial costs for airports, airlines, and passengers. To illustrate this assertion, the authors cite the financial impact of air traffic congestion in the United States, which exceeded \$30 billion in 2007 \cite{gillen2016airport, jacquillat_interairline_2018, jacquillat_roadmap_2018, ribeiro_large-scale_2019} and reached \$33 billion in 2019 \cite{dixit_algorithmic_2023}.
+
+\citeonline{jacquillat_interairline_2018} and \cite{zografos_bi-objective_2019} demonstrated that a primary objective in addressing the slot allocation problem is to balance the preferences and requirements of diverse stakeholders. This often involves navigating trade-offs between efficiency (maximizing the aggregate utility of stakeholders), equity (fairly distributing utilities among stakeholders), and potentially other objectives such as maximizing outcome predictability and ensuring incentive compatibility. This perspective has led authors to propose models incorporating inter-airline fairness measures, which aim to distribute schedule displacement equitably among airlines \cite{fairbrother2018development, jacquillat_roadmap_2018,  zografos_bi-objective_2019, jiang_decision_2021}
+
+These cited imbalances can lead to negative socio-economic and environmental impacts, including increased emissions, and a deterioration of the service quality offered. These consequences affect the travelling public, airlines, airports, and communities situated near airports \cite{keskin_optimal_2023}. Furthermore, \citeonline{zografos2017increasing} suggests that objectives could also be established to maximize social benefits.
+
+Another key motivation, as highlighted by \citeonline{ribeiro_large-scale_2019}, is the limited applicability of exact optimization approaches, which primarily remains confined to small and medium-size airports. This limitation arises from the combinatorial complexity of the problem, rendering it computationally intractable for larger airports. Similarly, \citeonline{zografos2017increasing} supports this view, due to the inherent combinatorial complexity and resource constraints, it is unlikely that a solution algorithm with polynomial time complexity will be found. The complexity of the resulting slot scheduling problem has thus attracted significant interest from the research community, leading to the proposal of several models for optimizing slot allocation decisions \cite{jiang_decision_2021}.
+
+\subsubsection{Concept Mapping: Methods and Results}
+
+To address the research question formulated for this systematic literature review, as detailed in Section \ref{section:Planning}, it is necessary to examine the application of integer programming, queueing theory, and machine learning techniques in addressing the slot allocation problem, consistent with the conceptualization presented in \refFig{fig:narrative_one}. The selected studies have identified three primary methodological branches for solving the allocation problem: (i) single airport allocation and (ii) airport network allocation. A further approach involves (iii) reviewing the existing literature and synthesizing the methodologies and results, which constitutes the objective of the current \acrfull{SLR}. \refFig{fig:narrative_four} illustrates the methodologies employed in the reviewed studies alongside their main findings.
+
+\figuraBib{14d_narrative_section3_method_results}{Methodological approaches and main findings of reviewed studies on slot allocation}{}{fig:narrative_four}{width=1.0\textwidth}%
+
+\textit{Analysis of existing literature review on slot allocation problem}
+\\
+
+Initially, this report will address the secondary studies that provide a literature review.
+
+\citeonline{zografos2017increasing} aimed to achieve three objectives: (i) a critical review of capacity declaration modeling and optimization strategies for slot allocation within available infrastructure; (ii) an identification of the challenges in existing research and its primary analytical gaps; and (iii) a proposal for future research directions to address the problem. The authors conducted a review of 96 studies, with around two-thirds cited in the article, primarily focusing on slot management approaches rather than market-based methods. The article highlights the necessity of approaches that lead to better quantity (e.g., more slots being accepted than through strict application of \acrshort{IATA} guidelines) and better quality (e.g., allocation closer to the initial submission request). It is demonstrated that a significant relationship exists between slot allocation, runway demand, aircraft fleet assignment, airport gate assignment, landing and takeoff sequencing, crew scheduling, as well as \acrshort{ATM} ground control or delay programming. \citeonline{zografos2017increasing} also addresses the modeling of airport infrastructure capacity declaration, showcasing various assumed attributes (e.g., level of aggregation, types of movements, time intervals for analysis, rolling constraints, capacity influenced by diverse internal and external factors, weather dependency, etc.). The authors not only explain the different types of approaches in terms of infrastructure (e.g., for a single airport, airport network) but also distribution methods (e.g., deterministic or heuristic). To this end, the formulation of an integer linear programming objective function is presented, within a deterministic allocation model, for both infrastructure categories – single and multiple airports. Finally, the article utilizes the unaddressed or explicitly stated needs for future study developments to generate a classification system for the development of new articles. This classification is based on geographical coverage, number of optimization criteria, type of objective function, nature of capacity, types of constraints, precedence relationships, priority classes, and other regulatory properties.
+
+\citeonline{jacquillat_roadmap_2018} outline three primary objectives in their study: (i) the estimation of airport capacity and its key drivers; (ii) the presentation of an approach for determining punctuality performance as a function of demand and capacity; and (iii) the introduction of models that could potentially enhance airport demand management mechanisms, summarizing insights and providing a roadmap for future research. The authors define maximum throughput capacity as the “average number of aircraft movements that can be processed per unit of time under continuous demand,” identifying its main determinants as the number of runways, runway layout and configuration, separation requirements between movements, operational and meteorological conditions, arrival and departure mix, and aircraft mix. These factors directly influence an airport's ability to receive and accommodate air traffic demand. The authors highlight two ways to characterize airport capacity: theoretical, which utilizes the aforementioned data with certain simplifications to calculate the acceptable demand; and empirical, which, through historical data, estimates the Operational Throughput Envelope to characterize the maximum movements of each category that can be accommodated. Regarding airport congestion, the authors categorize models into three types: microscopic, which creates an airport layout and analyzes each aircraft individually, typically involving simulations; mesoscopic, which characterizes runway utilization, taxi-out and taxi-in times, along with other statistical data, to estimate demand; and macroscopic, which uses an aggregated representation of airport operations to generate accurate estimates of delays based on allocated flights and airport capacity. \citeonline{jacquillat_roadmap_2018} offer insights into the non-linearity between slots, airport capacity, and punctuality performance. They indicate that small increases in slot acceptance can lead to significant negative impacts on punctuality, whereas a more even distribution of flights throughout the day results in lower delay occurrences. The authors suggest that models such as queueing theory can be applied to understand these sensitivities and, consequently, be utilized with market mechanisms to alter the cost per extra movement during peak hours. In conclusion, the authors define a roadmap of actions following traffic forecast definition: airport infrastructure planning, ensuring the configuration is advantageous by avoiding both under-design (leading to lost demand) and over-design (leading to lost profitability); optimization of air traffic regulation and procedures, which implies training and technology application to meet demand safely, or even enable it; configuration of punctuality performance objectives, determining acceptable levels of congestion; and establishment of demand management mechanisms, whether based on administrative or economic principles.
+
+\citeonline{gillen2016airport}, in their literature review, highlighted the interdependencies among the operating, managerial, and economic dimensions of the slot allocation problem. Their review aimed to identify models that (i) determine appropriate scheduling levels for congestion mitigation and (ii) specify mechanisms for allocating capacity to airlines. The article presented both administrative measures and market-based approaches, explaining and comparing mechanisms such as slot control, congestion pricing, and slot auctions. \citeonline{gillen2016airport} emphasized the inherent uncertainty in addressing delays, meteorological conditions, and the precise timing of movements, which are influenced by various stochastic factors. The authors also explained the complexity of air traffic operations, which can experience multiple bottlenecks across different phases (e.g., departure, en-route, and arrival), each with its own local constraints. Similar to \citeonline{jacquillat_roadmap_2018}, \citeonline{gillen2016airport} described models that assess demand performance status but do not focus on optimization. These include deterministic queue models, stochastic queue theory models, and their combinations. To address optimization, the authors cited Integer Programming, which aims to maximize the efficiency of slot allocation. Recognizing the complexity of choosing between price-based and quantity-based instruments, a decision dependent on several market characteristics, the authors established topics to guide the discussion on which method to apply. Finally, \citeonline{gillen2016airport} introduced an integrated framework for airport demand management, outlining the relationships between airport demand, supply, and on-time performance.
+
+\hfill \break
+\textit{Administrative mechanisms for airport slot allocation}
+\\
+
+Em construção
+
+
+\subsubsection{Concept Mapping: Limitations}
+
+Em construção
+
+\figuraBib{14c_narrative_section3_limitation_2.drawio}{Theoretical understanding of the problem: Linking slot optimization and airport sensitivity to enhanced allocation and financial outcomes. Adapted from: \cite{popay2006guidance, eduspots_theoryofchange}}{}{fig:narrative_five}{width=0.7\textwidth}%
+
+\subsection{Assessing the robustness of the synthesis: Critical Reflection}
+
+Em construção
