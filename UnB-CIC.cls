@@ -897,7 +897,7 @@
 		\@IncluirSecao{dedicatoria}%
 		\@IncluirSecao{agradecimentos}%
 	\fi%
-	%\@IncluirSecao{resumo}%
+	\@IncluirSecao{resumo}%
 	\selectlanguage{american}%
 	\@IncluirSecao{abstract}%
 	\selectlanguage{american}%
