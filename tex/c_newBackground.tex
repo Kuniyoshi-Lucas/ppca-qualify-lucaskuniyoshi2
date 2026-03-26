@@ -1,0 +1,883 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   SECTION: Airport regulations and operation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Airport regulations and operation}
+\label{sec:Airport_regulations_and_operation}
+
+
+In order to better understand this study's main problem, it is important to have
+knowledge of the basic concepts of airport’s operation.
+%
+The prototypical airport is composed of 2 parts: an (i) airside and (ii)
+landside~\cite{Lance2009}.
+%
+From an operational airport’s perspective, the aircraft movement starts at the
+airside, when it approaches the runway through the commands of the
+\acrfull{ATM}.
+%
+After the landing at the runway, the aircraft continues the movement, now at the
+ground level, through the taxiways.
+%
+The aircraft approaches the apron in the direction of the parking stand.
+%
+When it is positioned at its designated stand, the aircraft parks and bridges or
+airstairs are attached to the equipment in order to disembark the passengers,
+leading them to a gate.
+%
+After the gate, the passengers are at the landside, in the airport terminal.
+%
+There, they may enjoy the commercial stores (e.g., convenience stores,
+restaurants, and car rental agencies) before collecting their luggage and
+leaving the airport by ground transport or connecting to other flights.
+%
+
+
+
+The opposite movement is also possible: the passengers arrive at the airport
+using ground transportation, they may also use the airport’s parking lots; they
+access the terminal, after check-in procedures and security inspections; they
+may enjoy the commercial stores, before embarking to the aircraft; at the
+airside, the aircraft pushes back, after it gets disattached from the airport
+bridges or airstairs; it proceeds through the taxiways until it arrives at the
+runways; and finally it takes-off, ending its movement at the airport.
+%
+
+
+
+As it is highlighted in~\cite{cavusoglu2021minimum}, there are three predominant
+processes for the airports’ capacity allocation: (i) administrative management,
+with slot distribution processes through a set of specific prioritization rules;
+(ii) economic management, where the airport’s congestion price is established,
+slot sales and exchanges are allowed, or auctions are made; and (iii) no
+regulatory mechanism, relying only on some infrastructure constraints as
+parameters (e.g., LaGuardia Airport and Ronald Reagan Washington National
+Airport as presented by~\cite{FAAslots}).
+
+
+
+The administrative management is the most used mechanism for slots.
+%
+It is often use the \acrfull{WASG}, published by
+\acrshort{IATA}\cite{ribeiro2018optimization}.
+%
+There are also applications of \acrshort{WASG} variations through local
+resolutions, as is the case of Brazil, where the local regulator is
+the\acrfull{ANAC}.
+%
+Therefore, this chapter will: (i) present administrative mechanisms, through the
+\acrshort{WASG} and its allocation practices in congested airports, discussing
+the differences and similarities between the resolution covering Brazilian
+airports and the best practices developed by \acrshort{IATA}; (ii) briefly
+explain the characteristics of the economic management, which contains
+market-driven mechanisms; and (iii) review advantages of slot management
+mechanism applications compared to airports with almost no restrictions.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SUB-SECTION: ADMINISTRATIVE DEMAND MANAGEMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Administrative demand management}
+\label{subsec:admDemMan}
+
+
+
+Demand management has been demonstrated in several works as one of the main
+processes to distribute air operators’ movements in the airports’ available
+infrastructure, dealing with the lack of capacity, delays and operational
+service level decaying due to congestion~\cite{zografos2017increasing,
+ribeiro2018optimization}.
+
+
+
+The administrative demand management approach aims to increase airport
+efficiency with allocation prioritization.
+%
+Based upon optimization techniques, such practices have as objective to allocate
+in a certain number of available resources (airport slots), the dependent
+activities, i.e., air operators’ arrivals and departures movements.
+%
+The allocation, made through the distribution of slots, must satisfy specific
+conditions (explained in \ref{infra})~\cite{zografos2017increasing}.
+
+
+
+
+At the strategic level, the administrative management develops a cooperation
+practice where actions are coordinated between stakeholders, with bilateral
+communications and frequent reviews, so that the allocation may take place in
+accordance with all parties.
+%
+The general objective is to match the requests made by the air operators with
+the declared infrastructure capacity, maximizing the number of accepted
+movements and, at the same time, minimizing the air operators’ operational cost
+to when they need to reschedule its flights outside the planned hours, due to
+the restrictions imposed at the airport~\cite {gillen2016airport}.
+%
+As it was explained, the main administrative management strategy is the
+\acrshort{IATA}’s \acrshort{WASG}, which has been adopted by local authorities
+in several countries~\cite{zografos2017increasing, fairbrother2018development,
+cavusoglu2021minimum}.
+
+
+
+
+In order to better understand the the slot management process, \refTab{tab:def}
+shows a glossary containing the main terms used by \acrshort{WASG}.
+
+\input{tab/tab_ref}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SUB-SECTION: WORLDWIDE AIRPORT SLOT GUIDELINES - WASG - IATA 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Worldwide Airport Slot Guidelines (\acrshort{WASG}) - \acrshort{IATA}}
+\label{subsec:WorAirSloGui}
+
+To provide a standard for slot management and operations planning, the
+\acrshort{IATA}, together with \acrfull{ACI} and \acrfull{WWACG}, publishes the
+\acrshort{WASG}~\cite{WASG2020}.
+
+In general terms, the proposal to coordinate airports through the
+\acrshort{WASG} aims to: (i) improve the connectivity of air services, promoting
+competitiveness in congested airports; (ii) provide slot schedules that meet
+demand and are consistent across seasons; (iii) ensure a fair, transparent and
+non-discriminatory slots allocation; (vi) promote efficient use of airports’
+infrastructure; (v) guarantee market access to new air operators; (vi) provide a
+flexible slot management system for the industry, which can be adapt through
+local regulations and market conditions; and (vii) minimize congestion and
+delays caused by the allocation of slots with no parameters.
+
+
+
+\subsubsection{Slot Stakeholders}
+
+Slot management impacts several groups interested in the growing demand and the
+efficiency of airport infrastructure use, including air operators as the origin
+of movement demand and the airport administrator responsible for balancing slot
+availability with adequate operational levels.
+%
+According to the \acrshort{WASG}, this ecosystem also involves the authorities
+responsible for airspace control, the coordinators or facilitators tasked with
+managing slots at the airport, and the government bodies responsible for
+regulating airport use.
+%
+\refFig{fig_stakeholders_general} illustrates the relationship of stakeholders, showing the information that is exchanged during the slot management process.
+
+
+
+\figuraBib{1_stakeholders_en}{Relationship between stakeholders in the management of slots through the direct use of \acrshort{WASG}}{}{fig_stakeholders_general}{width=1\textwidth}%
+
+
+
+
+Air operators have the responsibility to send requests for desired slots through
+a message, detailing the operations, and to prepare to cases where congestion is
+present in the airport and offers with different slots are sent as a response to
+the request.
+%
+They also must follow the calendar of coordination activities and local
+regulations, monitoring the slots allocated to always mitigate the risk of
+airport infrastructure misuse.
+
+
+
+The coordinator or facilitator are responsible to allocate the air operators
+slots in a transparent and non-discriminatory way.
+%
+They must ensure that the allocation is made in accordance with the capacity
+declared by the airport and the priority criteria established in the
+\acrshort{WASG}.
+%
+During the activities, the they assist the understanding of the coordination
+parameters, local guidelines, regulations, and any other criteria used in the
+allocation.
+%
+They must make available the list of the slots allocated and the offers sent,
+explaining why the requests were not fulfilled.
+%
+They must attend the conferences, in order to better approach the needs of the
+air operators, trying to find a middle ground between competitors.
+%
+They also must perform slot monitoring, to mitigate infrastructure misuse and to
+apply the use-or-lose-it rules, creating the historical slots.
+
+
+
+The airport administrator must provide support to the facilitator or
+coordinator, assisting in their tasks.
+%
+Airports must provide the infrastructure information so that capacity is filled
+with adequate demand.
+%
+If there is any special limitation present in their capacity, airports must
+communicate with the other stakeholders, especially if the demand projection
+shows to exceed the available capacity in future seasons.
+%
+Capacity updates must be presented at least twice a year, following each
+season's activity calendar.
+%
+The airport must send the monitoring of the slots to the airspace authorities
+and local regulators.
+
+
+
+The authorities responsible for air control must communicate to the airport
+administrator the airspace capacity that modifies the airport infrastructure
+capacity parameters.
+%
+The government that concedes the airport, must, through regulations, send the
+airport operator the conditions for using the infrastructure, as well as inform
+the investments that the airport operator needs to do in order to meet the
+projected target demand.
+
+
+
+
+\subsubsection{Capability Analysis}
+
+Prior to the slot allocation, a demand and capacity analysis is performed.
+%
+This analysis must be carried out promptly for the declaration of capacity, one
+of the season's official activities.
+%
+It takes into account the airport's ability to absorb movement demand, together
+with airspace limitations, in a level that the quantity of movements accepted in
+the airport infrastructure does not degrade its service levels, i.e.,  does not
+promote congestion and delays.
+%
+The result is constraints regarding the runway(s), stand(s), terminal(s),
+gate(s), among many other relevant airport infrastructures.
+
+
+
+Another important limitation of capacity is environmental, i.e., the airport
+discusses the need to reduce the number of slots available when there is a
+relevant environmental impact (e.g., periods without movement due to noise
+pollution or due to environmental events that affects the aircrafts’ visual
+operations).
+%
+
+
+
+One of the objectives of the capability statement is to understand which level
+the airport is at, i.e., Level 1, Level 2, and Level 3.
+%
+The level indicates the the airport's coordination criticality.
+%
+
+
+
+\subsubsection{Airport level definition}
+
+
+
+Each airport level has a different allocation priority.
+%
+The \refFig{fig_pri_alloc} illustrates the allocations by airport level,
+specifying the prioritized movements.
+
+
+
+
+\figuraBib{3_allocation_en}{Allocation priority for each airport level}{}{fig_pri_alloc}{width=0.8\textwidth}%
+
+
+
+At Level 1, due to the availability of adequate schedules for every demand, the
+allocation becomes free of priorities.
+%
+At Level 2, the following allocation priority is applied: (i) movements that
+operated regularly in the previous equivalent season; (ii) annual movements,
+i.e., those which have operated with high regularity in the immediately
+preceding season; (iii) movements with more schedule operations for the current
+season; (iv) temporary operations; (v) movements restricted by operational
+factors; and (vi) any other type of movement.
+%
+At Level 2, as well as a Level 3, a waiting list can be instituted for already
+congested periods.
+
+
+
+For Level 3, \acrshort{WASG} proposes a mechanism that grants access to the
+high-demand market, opening opportunities for new operators to obtain slots at
+coveted times.
+%
+For these, the allocation is made prioritizing a series of slots, temporary
+slots, and other operations.
+%
+The series of slots can be allocated prioritizing: (i) historical slots with no
+changes, with changes other than in coordination parameters, or with changes
+that impact the coordination parameters within a flexibility range period; (ii)
+slot pool, containing a consistent division of the remaining slots for new
+entrants and non-new-entrants operators; and (iii) other movements.
+%
+Additional allocation factors are commonly applied to the Level 3 slot pool
+based on criteria such as operational frequency, historical performance within
+flexibility ranges, and regulatory scheduling constraints.
+%
+Priority may also be determined by waitlist duration, specific service
+types—such as passenger or cargo— and target markets ranging from regional to
+international destinations.
+%
+Furthermore, the selection process incorporates specific parameters established
+by a stakeholders' committee to ensure optimized infrastructure utilization.
+
+
+
+\subsubsection{Slot allocation: calendar activities}
+
+
+
+The slot allocation process follows a structured timeline defined by the
+\acrshort{WASG} activity calendar, beginning with the regulator's publication of
+the schedule for the upcoming season.
+%
+Within seven days of this publication, airports must declare their capacity and
+coordination parameters, after which coordinators provide historic slot details
+via standard \acrshort{SHL} messages.
+%
+Air operators then review these historic slots through \acrshort{AHD} and
+coordinate with stakeholders to resolve any discrepancies before submitting
+their initial slot requests (\acrshort{ISD}).
+
+
+
+Once the initial distribution is communicated via \acrshort{SAL}, a dialogue
+between coordinators and air operators facilitates adjustments and potential
+slot exchanges during specialized conferences (\acrshort{SC}).
+%
+This is followed by a continuous reallocation phase that lasts until the
+\acrshort{SRD} deadline, at which point all non-operational movements must be
+canceled.
+%
+The resulting data forms the reference base (\acrshort{BDR}), establishing the
+80\% regularity threshold required to maintain historic status for future
+seasons.
+%
+Finally, the airline community engages in operational planning to ensure that
+airspace, stands, gates, and other critical infrastructure are prepared to
+accommodate the scheduled movements.
+
+
+
+After all the steps, new slots can be requested if feasible allocation.
+%
+The season starts with the first planning operation on the last Sunday of
+October (Winter Season) or on the last Sunday of March (Winter Season).
+%
+Simultaneously, the planning for the immediately following season takes place.
+%
+The \refFig{fig_temp} illustrates the season system, with each season indicated
+by specific colors.
+%
+Note that during the activities of a specific season, the activities related to
+the immediately following season are already started, in a continuous process.
+
+
+
+\figuraBib{2_temporadas_en}{Illustration of the calendar of activities stipulated by the WSGA}{}{fig_temp}{width=1\textwidth}%
+
+
+
+\subsubsection{Slot Monitoring}
+
+For the slots monitoring, \acrshort{WASG} recommends that it should be divided
+into (i) pre-operation analysis, which identifies the slots misuses before the
+day when the movements occur; and (ii) post-operation analysis, which identifies
+whether a misuse has occurred and whether the operator has achieved the historic
+right in its slots.
+%
+The objective is to ensure proper operation, avoid the waste of airport
+infrastructure, and open communication channels between stakeholders.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SUBSECTION: Brazilian local regulations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Brazilian local regulations}
+\label{subsec:BraLocReg}
+
+
+
+As recommended by \acrshort{WASG}, the application of good practices must
+consider the regulations in place where the airport is located.
+%
+Thus, as the present work studies airports in Brazil, it is necessary to
+understand the rules established by the \acrshort{ANAC}, highlighting their
+similarities and differences.
+
+
+
+\acrshort{ANAC} establishes, through Resolution No. 682, of July 07th, 2022, the
+regulations and procedures for allocating slots at airports coordinated and
+facilitated.
+%
+As established in \acrshort{WASG}, coordinated airports would be Level 3
+airports, and airports of interest would be level 2 airports, with their
+specificities explained in resolution~\cite{ANAC682}.
+
+
+
+The principles of slot coordination are stipulated to minimize the effects of
+infrastructure congestion at Brazilian airports, focusing on transparency,
+non-discrimination, impartiality, and efficient use of the declared
+infrastructure of each airport.
+%
+It also establishes an activity calendar containing the declaration of capacity,
+distribution of slot requests, allocation responses, and slots monitoring.
+
+
+
+\figuraBib{1a_stakeholders_en}{Relationship between stakeholders in the management of slots through the use of Brazilian resolution (level 3 airports)}{}{fig_stakeholders_anac_coord}{width=1\textwidth}%
+
+
+
+Unlike \acrshort{WASG}, the resolution established an \acrshort{ANAC} team that
+will be responsible for activities related to slot coordination at the level 3
+airports.
+%
+The \refFig{fig_stakeholders_anac_coord} illustrates the relationship between
+stakeholders via \acrshort{ANAC} regulation.
+%
+Thus, if the level of congestion at a given Brazilian airport exceeds the limit
+of its infrastructure capacity to absorb demand, in any of its allocation
+parameters (e.g., runway, patio, or terminal), or at due to the request of an
+interested party, \acrshort{ANAC} can declare it as coordinated.
+%
+In this case, although the agency is also the government agency responsible for
+monitoring the development of the airport exploration plan, a separate
+\acrshort{ANAC} team will also be in charge of the administrative management of
+slots.
+
+
+
+A significant distinction in the Brazilian slot distribution process is that
+during the initial submission (\acrshort{ISD}), only requests constituting a
+series of slots are processed, which precludes temporary requests.
+%
+Furthermore, the priority order differs from \acrshort{WASG} standards by
+prioritizing historic slots first, followed by modified historic slots, and
+finally new requests.
+%
+These new operations are the last to be allocated in the \acrshort{SAL}, as the
+system specifically prioritizes the continuity of operations from the
+immediately preceding season before accommodating new market entries.
+
+
+
+Beyond the primary allocation rules, several additional criteria are utilized to
+resolve ties or conflicts in slot distribution.
+%
+Priority may be granted based on the total number of operations planned for the
+season, the use of larger aircraft with higher passenger or cargo capacities,
+and demonstrated operational or environmental efficiency in previous equivalent
+seasons.
+%
+Furthermore, regulators often favor requests that enhance market competition,
+specifically those aimed at reducing the \acrfull{HHI} to prevent monopolistic
+dominance at the airport.
+
+
+
+For the analysis of operational efficiency, the resolution presents a comparison
+of the reference base \acrshort{BDR} with the current base of slots for the
+season, taking into account the operations that did not use the available
+infrastructure without valid justification.
+%
+The \acrfull{IR} is calculated using the \refEq{RI}.
+%
+The \acrshort{IR} will be used to determine the historic status of the slots for
+the next equivalent season.
+%
+
+
+
+\equacao{RI}{IRs = \frac{Used\; slots}{Slots\; allocated\; in\;the\; BDR}}
+\\
+
+
+
+\acrshort{ANAC} also mitigates the misuse of slots through regulations on
+infractions and their respective administrative measures.
+%
+If an air operator obtains a slot that it does not intend to use, wasting the
+airport infrastructure above the imposed limit, it will be considered an
+infraction punishable by fines established by the agency, as well as the
+impediment to obtain historic slots.
+
+
+
+Similar to \acrshort{WASG}, if the company falls below the minimum regularity
+target (in this case established by the coordinator), as well as when the
+intentional misuse of allocated slots is identified, the company may lose the
+historic slot.
+%
+In the \acrshort{ANAC}’s regulation, when misuse happens, if the slots are
+requested at the next equivalent season, they would be inserted in the slots
+pool.
+
+
+
+
+In Brazil, it is set to facilitated airports (i.e., level 2 airports) to
+prioritize the allocation of air operators’ slots series that operated in the
+last season (i.e., the annual movements).
+%
+Since there are no historic slots, the resolution recommends lower priority for
+operators who misuse airport infrastructure.
+%
+The \refFig{fig_stakeholders_anac_facil} illustrates the stakeholders in an
+facilitated airport configuration stipulated by \acrshort{ANAC}.
+%
+Note that both the airport and the slot facilitator are the same entity.
+
+
+
+ \figuraBib{1b_stakeholders_en}{Relationship between stakeholders in the management of slots through the use of Brazilian resolution (level 2 airports)}{}{fig_stakeholders_anac_facil}{width=1\textwidth}%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SUB-SECTION: ECONOMIC DEMAND MANAGEMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Economic demand management}
+\label{subsec:EcoDemMan}
+
+
+
+Although it is not the scope of the present study, research with market-driven
+approaches, i.e., economic, has been developed, despite not being widely applied
+in practice, to solve the problem of increasing demand allocation in airports.
+%
+The main objective is to address challenges not solved by the administrative
+mechanisms \cite{ball2006auctions}.
+
+
+The article \citeonline{gillen2016airport} cites two primary mechanisms for the
+economic management of the exposed problem: (i) Congestion pricing, where the
+cost of using the overloaded infrastructure is passed on to the air operators,
+which are interested to gain access to the airport; and (ii) auction of slots,
+as well as in the administrative management of demand, the airport declares the
+number of slots available through airport parameters, and it is given access to
+the air operator with the highest monetary offer.
+
+
+
+\subsubsection{Congestion pricing}
+
+
+
+The \refFig{fig_econ_congest} demonstrates the idea of price mechanisms,
+illustrating the relationship between the marginal cost of delay and the
+marginal benefit of allocation \cite{gillen2016airport}.
+%
+Therefore, when the congestion price is not present, air operators can allocate
+``A'' movements, resulting in a marginal delay cost ``W''.
+%
+However, the total marginal cost, ``Y'', exceeds the allocation benefit.
+%
+Reducing the amount of the number of moves allocated to ``B'' $\le$\ ``A'', the
+total marginal cost is equal to the benefit of allocation ``Z'', having an
+internal marginal cost ``X''.
+%
+There are, however, some difficulties with this demonstration, as
+\cite{gillen2016airport} points out: (i) developing the congestion pricing
+scheme is complex, i.e., measuring the internal and total marginal cost is not
+trivial; and (ii) there are uncertainties regarding how the allocation of air
+operators varies with the congestion price.
+
+
+
+\figuraBib{5_congestionPrice_en}{Congestion pricing as an alternative for external delay correction and slot allocation. Adapted from: \cite{gillen2016airport}}{}{fig_econ_congest}{width=1\textwidth}%
+
+
+
+Still about the economic management problem, it is important to point out that
+typically air operators allocate several movements in a short period, imposing
+congestion costs on themselves.
+%
+It can be argued that airport systems containing hubs of few air operators,
+i.e., reduced competition, have a high internalization of congestion cost,
+reducing the price per slot, and making impacts related to economic demand
+management negligible \cite{ball2006auctions, gillen2016airport}.
+%
+However, for these airports, where the internal marginal cost is equal to the
+total marginal cost due to the lack of competition, it is shown higher rates of
+delays since overschedule are made by the monopolist air operator, that
+allocates demand which the operational cost cannot be totally internalized
+\cite{ball2006auctions}.
+%
+The \refFig{fig_econ_compet} demonstrates the relationship between competition
+and increased cost per slots.
+%
+In a non-competitive airport system, the cost of delay is internalized and there
+are no incentives to manage demand.
+%
+However, introducing competition, it makes the cost per slots increase,
+distribution mechanisms that search for a balance between accepted moves and
+total delay cost are needed.
+
+
+
+\figuraBib{6_competition_en}{Relationship between the price of slots and costs related to competition. Adapted from: \cite{ball2006auctions}}{}{fig_econ_compet}{width=1\textwidth}%
+
+
+
+Since congestion pricing is a topic that still requires further studies, due to
+its complexity in measuring the internalization of delays and designing the
+congestion pricing scheme for each modality of air operator
+\cite{gillen2016airport}, other economic management mechanisms would be the
+auctions of slots.
+%
+These would also not be atomized, i.e., each slot auctioned individually, due to
+the risk of exposure to the air operator if arrivals and departures at a given
+airport do not end up coupled with each other and among other movements at other
+airports.
+%
+This brings the need for combinatorial auctions, which need to be mutually
+exclusive.
+
+
+
+\subsubsection{Auction of slots}
+
+
+
+The knowledge that the slot will be auctioned in the future brings the
+continuous need to evaluate the market and the slots’ price, limiting the
+negative sides of the administrative management of slots: (i) inefficiencies
+guaranteed by historic; (ii) legal difficulties in congested airports to appoint
+holders of newly released slots; and (iii) limitation of market entry for new
+air operators, as they have a less economic impact on the airport.
+%
+It is worth mentioning that the revenue generated by the auction is related to
+the market value due to the scarce system, paying for the cost of the used
+infrastructure.
+%
+However, a slot auction system should focus primarily on encouraging
+competition, rather than maximizing revenue \cite{ball2006auctions}.
+
+
+
+
+For the auctions mechanism, \cite{ball2006auctions} points out limitations in 5 pillars:
+\begin{itemize}
+\item \textbf{\textit{Capacity}}: the number of slots available for auction is related to demand, which is unknown before the auction takes place. Therefore, before declaring slot holders, it is necessary to ensure that the combination of slots granted does not exceed airport parameters.
+\item \textit{\textbf{Ownership}}: it is necessary to specify the period of slots ownership, together with their acceptable operating range, which also influences the capacity. Regulation that allows secondary auctions, where ownership over the slot can be transferred between operators, is also needed. Daily transfers between operators may also be possible, allowing better use of airport infrastructure.
+\item \textbf{\textit{Value}}: although the value of a slot is present to air operators, its value during an auction is unknown. Therefore, the market will evaluate and pay the slot holder an amount that will be corrected over time.
+\item \textbf{\textit{Market Power}}: it is necessary to design auctions that have a regulation that encourages competition, preventing offers to buy a monopoly.
+\item \textbf{\textit{Implementation}}: even if the transition from administrative management to an economic management system is organized in phases, i.e., auctioning a percentage of the slots in a congested airport, it will impact operators' connection networks airlines as a whole, and their losses to the market may be greater than the benefits.
+\end{itemize}
+
+
+
+A hybrid use is possible, i.e., combining the advantages of administrative
+management with economic management.
+%
+Thus, the allocation could first come from an administrative allocation process
+(e.g., \acrshort{WASG} and adaptations made by the local authorities), selling
+at congestion price or auctioning the remaining slots.
+%
+This would add up to three important benefits of administrative mechanisms: (i)
+it helps air operators to project future decisions related to slots; (ii) it
+makes the process less complex by following the activities calendar, which
+proposes allocations twice a year; and (iii) it assists in the long-term
+industry projection, which can easily predict the growth of competition and the
+market, with the incentive of congestion pricing and slot appreciation, offered
+by economic management.
+%
+However, it is worth mentioning that the disadvantages of both management would
+also be aggregated, where regulatory needs for slot distribution, ownership
+definition, and market access would be evident, and could be disputed in court
+by airline operators, as occurred in 2008 in an attempt to auction 10\% of New
+York airports’ slots \cite{cavusoglu2021minimum, gillen2016airport,
+BichlerAuction2022}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SUB-SECTION: AIRPORTS FREE OF DEMAND MANAGEMENT MECHANISMS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Airports free of demand management mechanisms}
+\label{subsec:AirFreDemManMec}
+
+
+
+As well as economic demand management, the approach to airports with systems
+free of demand management mechanisms goes beyond the scope of this work, but it
+has been applied in American airports and its cost-benefits have been
+highlighted \cite{cavusoglu2021minimum, gillen2016airport}.
+
+
+
+There are two objectives to be achieved at airports in terms of demand and
+slots: (i) maximize the number of movements accepted in the airport
+infrastructure, adapting required schedules to possible operating hours; and
+(ii) minimize congestion-related costs, which are present in high-demand
+airports in different forms (e.g., delays) \cite{cavusoglu2021minimum}.
+%
+It is noted that the objectives are inversely proportional because as the number
+of movements in an airport increases, projecting growth in revenue, the delays
+and impacts for the air operators increase, as illustrated in the
+\refFig{fig_sem_m_Demand} \cite{ zografos2017increasing, swaroop2012more,
+gillen2016airport}.
+
+
+
+\figuraBib{7_custos_demanda_en}{Cost-benefit of accepting movements in congested airports. Adapted from: \cite{swaroop2012more, gillen2016airport}}{}{fig_sem_m_Demand}{width=1\textwidth}%
+
+
+
+Although airports with high movement acceptance, and without demand management,
+are the simplest solution for allocation distribution, taking better advantage
+of the airport infrastructure \cite{gillen2016airport}, the approach also has
+risks and disadvantages.
+
+
+
+The indiscriminate use of infrastructure helps generate revenue from
+stakeholders, who invest in the growth of the industry.
+%
+In \cite{zografos2017increasing} the authors argue that demand management often
+constrains the declared capacity of the airport, which in turn affects not only
+the slots accepted but the distance between the desired times of movements,
+i.e., the quality of slots in the airport in an air operator perspective.
+%
+Thus, reducing management provides a greater frequency of movement, competition
+between operators, opportunities for new entrants, and better use of scarce
+infrastructure.
+%
+On the other hand, the opening would also reflect on delay costs and slot
+reliability.
+
+
+
+In \cite{swaroop2012more} the cost-benefit of applying demand management in
+airports with few mechanisms (e.g., \acrshort{LGA}) was studied.
+%
+It brings a methodology to simulate the cost related to increased movement and
+the costs generated by delays.
+%
+Adding the benefits of 16 US airports in the simulation, the reduction in delay
+costs for passengers would be more than 200 million dollars annually.
+%
+The study also proposes a reduction in infrastructure capacity, i.e., fewer
+movements during congested hours, resulting in a projection greater than 600
+million dollars annually in benefits for passengers.
+%
+However, the authors make it clear that, although the use of demand management
+mechanisms can generate financial benefits and a better level of service for
+passengers, by excluding movements, they could seriously harm the network of
+affected air operators.
+%
+The costs generated with the implementation of these mechanisms were also not
+added.
+%
+Although, intuitively, reducing delay costs also reduce operating costs,
+consequently the price of tickets for passengers.
+
+
+
+Another important topic brought up by demand management mechanisms is capacity
+declaration.
+%
+When an airport without these mechanisms is compared with coordinated airports,
+such as \acrfull{FRA} and \acrfull{EWR}, which have the similar infrastructure,
+\refFig{fig_sem_m_EWR_FRA}, there is a concentration of movements in
+\acrshort{EWR}, while \acrshort{FRA} has a more balanced distribution.
+%
+This characteristic is common in uncoordinated airports, where there are periods
+which scheduled movement exceeds the recommended limit of demand absorption,
+even in \acrfull{IFR}, i.e., adverse weather conditions of operation.
+%
+In \acrshort{EWR}, there is overutilization in the night period and
+underutilization in the rest of the day, showing inefficiency in the allocation.
+%
+This factor affects the airport's punctuality performance, which, due to the
+non-linear relationship between the number of movements and delays when the
+airport operates close to its capacity limit, makes certain American airports
+perform worse when compared to equivalents in Europe \cite{gillen2016airport}.
+
+
+
+\figuraBib{8_EWR_FRA}{Average weekly movements per month for \acrshort{EWR} and \acrshort{FRA} airports in 2007. Source:  \cite{gillen2016airport}}{}{fig_sem_m_EWR_FRA}{width=1\textwidth}%
+
+
+
+The article \cite{cavusoglu2021minimum} also points out that airports subject to
+coordination mechanisms tend to use the \acrfull{VMC} operational limit of the
+runway as their maximum capacity, i.e., normal weather conditions.
+%
+This is due to infrastructure overload due to adverse weather when delays are
+frequent.
+%
+Operating above this conditional, as shown in the \ref{fig_sem_m_EWR_FRA} part
+(b), even in \acrshort{VMC}, already configures acceptance of excessive delays
+and low confidence in slot schedules, which would worsen in situations of
+\acrshort{IFR}.
+%
+In addition, the study \cite{zografos2017increasing} points out that common
+concentrations in small time slots also increase the operational delay.
+%
+By reducing infrastructure capacity, movements would be spread over new slots,
+minimizing the airport's overall delay.
+%
+The \refFig{fig_sem_m_Greek} illustrates the movement of the largest airport in
+Greece, where a reduction from 85\% (part a) to 71\% (part b) has a considerable
+impact on the airport's peak delays.
+
+\figuraBib{9_GreekAirport}{Modeling the effects of capacity declaration on
+congestion-related delays. Source:
+\cite{zografos2017increasing}}{}{fig_sem_m_Greek}{width=0.6\textwidth}%
+
+
+
+Although there are difficulties in demand management systems (e.g.,
+inefficiencies in the general use of infrastructure guaranteed by history,
+market opening, capacity declaration, and implementation) its mechanism provides
+a better definition of infrastructure parameters, which as consequence provides
+better demand absorption at adequate service levels \cite{morisset2011capacity}.
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   SECTION: Queueing Theory
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Queueing Theory}
+\label{sec:Queueing_Theory}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   SECTION: Model Checking
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Model Checking}
+\label{sec:Model_Checking}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   SECTION: Conclusions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusions}
+\label{sec:Conclusions}
+
+
+
+
+
